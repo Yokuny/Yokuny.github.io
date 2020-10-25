@@ -4,54 +4,55 @@
     --black: white;
     --font: white;
 }
+/* box */
 body .profile-card-content{
     background-image: url(../img/card-image.jpg);
-
     border-radius: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: -10rem;
-    height: clamp(30vh, 60vh, 70vh);
-    width: clamp(30vw, 50vw, 70vw);
+    bottom: -4rem;
+    height: 60vh;
+    width: 55vw;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 }
 body .profile-card-content .my-image-profile a img{
     position: relative;
-    bottom: clamp(7rem, 10rem, 12rem);
-    height: clamp(7vw, 12vw, 14vw);
+    bottom: 6rem;
+    height: 20vh;
     border-radius: 100%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 }
+/* informaações iniciais */
 body .profile-card-content .profile-info{
     position: relative;
-    bottom: 8rem;
+    bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 body .profile-card-content .profile-info h4{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: black;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 body .profile-card-content .profile-info h3{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: black;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
 }
 body .a-line-before-about{
     position: relative;
-    bottom: 6rem;
+    bottom: 4rem;
 }
 /* quote */
 body .about-content{
     position: relative;
     display: flex;
     justify-content: center;
-    bottom: 5rem;
+    bottom: 3rem;
     width: clamp(40vw, 50vw, 60vw);
     color:black;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
@@ -61,11 +62,12 @@ body .about-me{
     flex-direction: column;
 }
 body .about-me .intro{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 300;
     text-align: center
 }
 body .about-me .nietzsche-quote{
+    box-sizing: border-box;
     margin-top: .8rem;
     height: 15vh;
     display: flex;
@@ -74,7 +76,7 @@ body .about-me .nietzsche-quote{
     padding: 10px;
     background-color: rgb(0, 0, 0, 0.06);
     border-radius: 7px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 300;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
 }
@@ -82,16 +84,17 @@ body .about-me .nietzsche-quote:hover{
     background-color: rgb(0, 0, 0, 0.03);
 }
 body .about-me .nietzsche-quote a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 body .a-line-after-about{
     position: relative;
-    bottom: 3rem;
+    bottom: 2rem;
 }
 body .the-line{
-    width: clamp(20vw,30vw, 40vw);
+    width: 30vw;
     color: #867575;
 }
+/* social contact */
 body .email-contact{
     position: relative;
     bottom: 0rem;
@@ -102,11 +105,10 @@ body .email-contact a{
     align-items: center;
     justify-content:center;
     text-decoration: none;
-    transition: transform 200ms;
 }
 body .email-contact h6{
     color:black;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin-left: 3rem;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
@@ -119,7 +121,7 @@ body .social-networks-content{
 }
 body .social-networks{
     position: relative;
-    bottom: -3rem;
+    bottom: -2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,7 +129,7 @@ body .social-networks{
 }
 body .social-networks img{
     height: 2vw;
-    transition: transform 200ms;
+    transition: linear 100ms;
 }
 body .social-networks img:hover{
     height: 3vw;
