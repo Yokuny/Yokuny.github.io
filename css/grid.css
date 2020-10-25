@@ -1,0 +1,32 @@
+.site-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". posts about-me .";
+    grid-gap: 2vw;
+}
+.site-content .posts {
+    grid-area: posts;
+}
+.site-content .about-me {
+    grid-area: about-me;
+}
+
+
+/* About-me */
+.about-me .profile-card-content {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "my-image-profile profile-info email-contact social-networks-content";
+}
+.about-me .profile-card-content .my-image-profile {
+    grid-area: my-image-profile;
+}
+.about-me .profile-card-content .profile-info {
+    grid-area: profile-info;
+}
+.about-me .profile-card-content .email-contact {
+    grid-area: email-contact;
+}
+.about-me .profile-card-content .social-networks-content {
+    grid-area: social-networks-content;
+}
