@@ -1,3 +1,12 @@
+.a-block {
+    position: absolute;
+    bottom: 21%;
+    z-index: -1;
+    background-color: var(--light-gray-transparent);
+    height: 53%;
+    width: 18%;
+    border-radius: 3px;
+}
 /* about-me grid area */
 .about-me {
     padding-top: 20vh;
@@ -13,6 +22,7 @@
 .profile-card-content .my-image-profile a img {
     width: 80%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 /* minhas informações */
 .profile-card-content .profile-info {
@@ -70,4 +80,37 @@
 }
 .social-networks img {
     height: 1.6vw;
+    transition: 200ms;
+}
+.social-networks img:hover {
+    height: 1.9vw;
+}
+/* project links */
+.my-projects-links {
+    width: 16vw;
+    margin-top: 3vh;
+    align-items: end;
+}
+.my-projects-links > h3 {
+    width: 100%;
+    align-items: end;
+    color: var(--font1);
+    margin-bottom: 1vh;
+    transition: linear 400ms;
+}
+.my-projects-links > h3:hover {
+    background-color: var(--font1);
+    color: var(--background);
+}
+.my-projects-links ul {
+    list-style-type: none;
+    align-items: end;
+}
+.my-projects-links .links li a {
+    color: var(--primary-light);
+    transition: linear 300ms;
+}
+.my-projects-links .links li a:hover {
+    background-color: var(--primary-light);
+    color: var(--background);
 }

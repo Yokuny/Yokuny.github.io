@@ -8,10 +8,12 @@
     box-sizing: border-box;
 
     --background: #111314;
-    --primary-dark: #3D4D42;
-    --primary-light: #77C699;
+    /* --primary-dark: #415848; */
+    --primary-light: rgba(119, 198, 153, 1);
+    --primary-dark: rgba(119, 198, 153, 0.5);
     --details: #4D4545;
-    --light-gray: #666666;
+    --light-gray: rgba(102, 102, 102, 1);
+    --light-gray-transparent: rgba(102, 102, 102, 0.2);
     --dark-gray: #4D4D4D;
     --font1: #A56377;
     --font2: #F14B24;
@@ -21,6 +23,7 @@ body {
     width: 100vw;
     height: 100%;
     background-color: var(--background);
+    z-index: 0;
 }
 :root {
     font-size: 62.5%;
