@@ -53,7 +53,7 @@
     padding-top: 1vh;
     width: 18vw;
     height: 5vh;
-    background-color: var(--primary-dark);
+    background-color: var(--primary-dark1);
     transition: background-color 200ms;
 }
 .email-contact:hover,

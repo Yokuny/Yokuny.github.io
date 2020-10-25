@@ -1,7 +1,7 @@
 .posts {
-    padding-top: 10vh;
+    padding: 10vh 0 0;
     margin-top: 20vh;
     width: 40vw;
-    height: 100%;
+    height: 500%;
     background-color: var(--dark-gray);
 }
