@@ -1,4 +1,21 @@
-.a-block {
+.about-me,
+.a-block,
+.profile-card-content,
+.my-image-profile,
+.my-image-profile a,
+.profile-info,
+.email-contact,
+.email-contact a,
+.social-networks-content,
+.social-networks,
+.my-projects-links,
+.my-projects-links h3:first-child,
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-background-block {
     position: absolute;
     bottom: 21%;
     z-index: -1;
@@ -26,7 +43,7 @@
 }
 /* minhas informações */
 .profile-card-content .profile-info {
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-bottom: 2vh;
 }
 .profile-card-content .profile-info h3 {
@@ -91,7 +108,7 @@
     margin-top: 3vh;
     align-items: end;
 }
-.my-projects-links > h3 {
+.my-projects-links h3:first-child {
     width: 100%;
     align-items: end;
     color: var(--font1);
@@ -106,11 +123,16 @@
     list-style-type: none;
     align-items: end;
 }
+.my-projects-links .links li {
+    transition: linear 300ms;
+}
 .my-projects-links .links li a {
     color: var(--primary-light);
     transition: linear 300ms;
 }
-.my-projects-links .links li a:hover {
+.my-projects-links .links li:hover {
     background-color: var(--primary-light);
+}
+.my-projects-links .links li a:hover {
     color: var(--background);
 }

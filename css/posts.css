@@ -1,7 +1,36 @@
-.posts {
-    padding: 10vh 0 0;
-    margin-top: 20vh;
+.content-background-block {
+    display: flex;
+    padding: 2vh;
+    margin-top: 15vh;
+    height: 100%;
     width: 40vw;
-    height: 500%;
     background-color: var(--light-gray-transparent);
+}
+/* content title */
+.posts h1:first-child {
+    width: 38vw;
+    padding-left: 0.5vw;
+    background-color: var(--font2);
+    color: var(--background);
+    margin-bottom: 1.5vh;
+}
+/* blogging content */
+.posts .post {
+    margin-top: 1vh;
+}
+.posts h3 a:first-child {
+    text-decoration: none;
+    color: var(--primary-light);
+    background-color: var(--light-gray-transparent);
+    transition: linear 300ms;
+}
+.posts .post b {
+    font-size: 0.8vw;
+    font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+    color: var(--details1);
+    background-color: var(--light-gray-transparent);
+}
+.posts h3 a:hover {
+    color: var(--background);
+    background-color: var(--primary-light);
 }
