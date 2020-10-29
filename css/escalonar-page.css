@@ -1,0 +1,15 @@
+.posts .division {
+    display: flex;
+    justify-content: center;
+    margin: 1.4vh;
+}
+.posts .content .citação {
+    margin: 1vh;
+    background-color: var(--light-gray-transparent);
+    padding: 0.4vh 0 0.4vh 2.8vw;
+}
+.posts .content .citação h3 {
+    font-family: lora;
+    font-style: italic;
+    color: var(--light-gray);
+}

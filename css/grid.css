@@ -10,8 +10,6 @@
 .site-content .about-me {
     grid-area: about-me;
 }
-
-
 /* About-me */
 .about-me .profile-card-content {
     display: grid;

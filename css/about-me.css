@@ -52,6 +52,8 @@
     transition: linear 300ms;
 }
 .profile-card-content .profile-info h3:hover {
+    padding: 1px;
+    border-radius: 1px;
     background-color: var(--font1);
     color: var(--background);
 }
@@ -61,6 +63,8 @@
     transition: linear 300ms;
 }
 .profile-card-content .profile-info h6:hover {
+    padding: 1px;
+    border-radius: 1px;
     background-color: var(--primary-light);
     color: var(--background);
 }

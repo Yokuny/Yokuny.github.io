@@ -1,9 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+}
 .content-background-block {
     display: flex;
     padding: 2vh;
     margin-top: 15vh;
     height: 100%;
     width: 40vw;
+    border-radius: 3px;
     background-color: var(--light-gray-transparent);
 }
 /* content title */
