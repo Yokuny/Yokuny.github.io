@@ -12,7 +12,7 @@ body {
     background-color: var(--light-gray-transparent);
 }
 /* content title */
-.posts h1:first-child {
+.posts .web-log:first-child {
     width: 38vw;
     padding-left: 0.5vw;
     background-color: var(--font2);

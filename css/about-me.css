@@ -43,27 +43,27 @@
 }
 /* minhas informações */
 .profile-card-content .profile-info {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1.6vh;
+    margin-bottom: 1.6vh;
 }
 .profile-card-content .profile-info h3 {
     color: var(--font1);
+    padding: 2px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.07);
     transition: linear 300ms;
 }
 .profile-card-content .profile-info h3:hover {
-    padding: 1px;
     border-radius: 1px;
     background-color: var(--font1);
     color: var(--background);
 }
 .profile-card-content .profile-info h6 {
     color: var(--primary-light);
+    padding: 2px;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
     transition: linear 300ms;
 }
 .profile-card-content .profile-info h6:hover {
-    padding: 1px;
     border-radius: 1px;
     background-color: var(--primary-light);
     color: var(--background);
@@ -71,9 +71,9 @@
 /* contato de email */
 .email-contact,
 .social-networks-content {
-    padding-top: 1vh;
+    padding-top: 0.8vh;
     width: 18vw;
-    height: 5vh;
+    height: 4.5vh;
     background-color: var(--primary-dark1);
     transition: background-color 200ms;
 }
@@ -85,13 +85,13 @@
     flex-direction: row;
     text-decoration: none;
 }
-.email-contact a h6 {
+.email-contact a h3 {
     color: var(--background);
     margin-left: 1vh;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
 }
 .email-contact img {
-    height: 2vw;
+    height: 1.8vw;
 }
 /* redes sociais */
 .social-networks {
@@ -104,39 +104,47 @@
     transition: 200ms;
 }
 .social-networks img:hover {
-    height: 1.9vw;
+    height: 1.8vw;
 }
-/* project links */
+/* project links title*/
 .my-projects-links {
+    margin-top: 1.6vh;
     width: 16vw;
-    margin-top: 3vh;
     align-items: end;
 }
 .my-projects-links h3:first-child {
     width: 100%;
+    padding: 2px 0;
     align-items: end;
     color: var(--font1);
-    margin-bottom: 1vh;
+    margin-bottom: 0.8vh;
     transition: linear 400ms;
 }
 .my-projects-links > h3:hover {
     background-color: var(--font1);
     color: var(--background);
 }
+/* project links list*/
 .my-projects-links ul {
     list-style-type: none;
+    display: flex;
     align-items: end;
 }
 .my-projects-links .links li {
     transition: linear 300ms;
 }
 .my-projects-links .links li a {
+    text-decoration: none;
+}
+.my-projects-links .links li h3 {
+    margin: 0;
+    padding: 0;
     color: var(--primary-light);
     transition: linear 300ms;
 }
 .my-projects-links .links li:hover {
     background-color: var(--primary-light);
 }
-.my-projects-links .links li a:hover {
+.my-projects-links .links li h3:hover {
     color: var(--background);
 }

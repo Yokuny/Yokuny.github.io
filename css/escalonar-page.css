@@ -4,11 +4,9 @@
     margin: 1.4vh;
 }
 .posts .content .citação {
-    margin: 1vh;
+    margin-top: 0.5vh;
     background-color: var(--light-gray-transparent);
-    padding: 0.4vh 0 0.4vh 2.8vw;
-}
-.posts .content .citação h3 {
+    padding: 0.4vh 0.4vw 0.4vh 2vw;
     font-family: lora;
     font-style: italic;
     color: var(--light-gray);
