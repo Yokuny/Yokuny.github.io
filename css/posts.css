@@ -7,13 +7,13 @@ body {
     padding: 2vh;
     margin-top: 15vh;
     height: 100%;
-    width: 40vw;
+    width: 80rem;
     border-radius: 3px;
     background-color: var(--light-gray-transparent);
 }
 /* content title */
 .posts .web-log:first-child {
-    width: 38vw;
+    width: 76rem;
     padding-left: 0.5vw;
     background-color: var(--font2);
     color: var(--background);
@@ -30,7 +30,7 @@ body {
     transition: linear 300ms;
 }
 .posts .post b {
-    font-size: 0.8vw;
+    font-size: 1.1rem;
     font-family: Verdana, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
     color: var(--details1);
     background-color: var(--light-gray-transparent);

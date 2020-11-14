@@ -30,15 +30,15 @@ body {
 }
 /* H1 titulo */
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     /* font-size: 1.8vh; */
 }
 /* H3 font normal */
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     /* font-size: 1.5vh; */
 }
 /* H6 detalhe */
 h6 {
-    font-size: 1.2vh;
+    font-size: 1.1rem;
 }

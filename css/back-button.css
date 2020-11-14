@@ -18,3 +18,7 @@
 .back-button button:hover {
     background: var(--font1);
 }
+.back-button button img {
+    height: 3vh;
+    width: 3vw;
+}
