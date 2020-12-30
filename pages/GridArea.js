@@ -8,7 +8,7 @@ export default function gridArea(){
                     <h1 className="ml-2 leading-5 text-black font-bold tracking-wide">Web Log</h1>
                 </div>
             </div>
-            <div className="flex justify-center col-span-1 bg-gray-800 my-8 rounded">
+            <div className="flex justify-center col-span-1 my-8 rounded">
                 <ProfileCard />
             </div>
             <div className="col-auto w-0 h-0 bg-orange-500"></div>

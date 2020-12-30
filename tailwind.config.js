@@ -2,6 +2,9 @@ module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'verdana': ["Verdana", "HelveticaNeue", "Helvetica Neue", "Arial", "sans-serif"],
+    },
     colors: {
       black: '#000',
       white: '#fff',
@@ -242,8 +245,8 @@ module.exports = {
         500: '#71717a',
         600: '#52525b',
         700: '#3f3f46',
-        800: 'rgb(73, 73, 73, .08)',
-        900: '#111314',
+        800: 'rgb(73, 73, 73, .09)',
+        900: '#0F1112',
       },
       coolGray: {
         50: '#f9fafb',
