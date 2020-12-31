@@ -13,10 +13,10 @@ export default function ProfileCard() {
     {projecName: 'ToDo-list', link: "https://yokuny.github.io/javaScritp-to-do-list/"}
   ];
   return (
-      <div className="flex flex-col bg-gray-800 justify-center">
+      <div className="flex flex-col bg-gray-800 justify-center rounded">
         <div className="px-3">
           <Image
-            className=""
+            className="rounded"
             src="/profile1.jpg"
             alt="Profile"
             width={230}
@@ -26,8 +26,8 @@ export default function ProfileCard() {
         <h4 className="flex justify-center mt-2 font-semibold text-fuchsia-300">
           <p className="font-serif tracking-wider hover:bg-fuchsia-300 hover:text-black duration-700">Felipe Rangel Ribeiro</p>
         </h4>
-        <h6 className="flex justify-center mb-3 leading-5 text-xs text-green-600">
-          <p className="font-Verdana tracking-wide font-bold hover:bg-green-600 hover:text-black duration-700">@Yokuny</p>
+        <h6 className="flex justify-center mb-3 leading-5 text-green-600">
+          <p className="font-Verdana text-xs tracking-wide font-bold hover:bg-green-600 hover:text-black duration-700">@Yokuny</p>
         </h6>
         <div className="py-1 flex justify-center items-center bg-green-700 hover:bg-green-600 duration-500">
           <Image
@@ -54,7 +54,7 @@ export default function ProfileCard() {
         </div>
         <p className="flex justify-end my-2 mx-3 hover:bg-fuchsia-300 leading-5 font-bold text-sm text-fuchsia-300 hover:text-black duration-700">My projects</p>
         {projecLinks.map(link =>
-          (<p className="flex justify-end mx-3 leading-5 font-bold text-sm text-green-600">
+          (<p className="flex justify-end mx-3 leading-5 font-medium text-sm text-green-600">
             <a href={link.link} className="hover:bg-green-600 hover:text-black duration-700">{link.projecName} ⩹</a>
           </p>)
         )}
