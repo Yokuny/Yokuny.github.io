@@ -13,8 +13,8 @@ export default function ProfileCard() {
     {projecName: 'ToDo-list', link: "https://yokuny.github.io/javaScritp-to-do-list/"}
   ];
   return (
-      <div className="w-60 flex flex-col bg-gray-800 justify-center rounded">
-        <div className="px-3">
+      <div className="lg:w-60 w-72 flex flex-col bg-gray-800 justify-center rounded">
+        <div className="flex justify-center px-3 pb-2">
           <Image
             className="rounded"
             src="/profile1.jpg"
