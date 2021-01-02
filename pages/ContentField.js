@@ -1,7 +1,45 @@
+import ContentFieldTitle from './ContentFieldTitle'
 export default function ContentField(){
     return(
-        <div className="mx-5 my-3 max-h-5 bg-orange-500">
-            <h1 className="ml-2 leading-5 text-black font-bold tracking-wide">Web Log</h1>
+        <div className="flex flex-col justify-start bg-gray-800 mx-2 rounded">
+            <ContentFieldTitle />
+            <ul className="ml-4 mb-8">
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+            </ul>
         </div>
     )
 };
