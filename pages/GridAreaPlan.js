@@ -4,7 +4,7 @@ import Forms from './Forms'
 
 export default function GridArea(){
     return (
-        <div className="w-screen grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-5">
             <div className="lg:col-start-2 lg:col-span-2 lg:row-span-2 col-span-1 lg:max-w-2xl lg:mt-8">
                 <ContentField />
             </div>

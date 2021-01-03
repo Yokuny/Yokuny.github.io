@@ -1,11 +1,12 @@
 import Image from 'next/image';
+
 export default function SocialLinks() {
     const socialLogos = [
-        {src: '/github.svg', alt:'github logo', link:'https://github.com/Yokuny'},
-        {src: '/whatsapp.svg', alt:'whatsapp logo'},
-        {src: '/instagram.svg', alt:'instagram logo', link:'https://www.instagram.com/yokuny/'},
-        {src: '/behance.svg', alt:'behance logo', link:'https://www.behance.net/Yokuny'},
-        {src: '/linkedin.svg', alt:'linkedin logo', link:'https://www.linkedin.com/in/yokuny/'},
+        {src: '/github.svg', alt:'github logo', link:'https://github.com/Yokuny', rotate:'transform hover:translate-y-6 hover:-rotate-45 duration-500'},
+        {src: '/whatsapp.svg', alt:'whatsapp logo', rotate:'transform hover:translate-y-6 hover:rotate-45 duration-500'},
+        {src: '/instagram.svg', alt:'instagram logo', link:'https://www.instagram.com/yokuny/', rotate:'transform hover:translate-y-6 hover:rotate-90 duration-500'},
+        {src: '/behance.svg', alt:'behance logo', link:'https://www.behance.net/Yokuny', rotate:'transform hover:translate-y-6 hover:-rotate-180 duration-500'},
+        {src: '/linkedin.svg', alt:'linkedin logo', link:'https://www.linkedin.com/in/yokuny/', rotate:'transform hover:translate-y-6 hover:-rotate-12 duration-500'},
       ];
     return (
       <>
@@ -23,7 +24,7 @@ export default function SocialLinks() {
           {socialLogos.map(img => (
             <a href={img.link}>
               <Image
-                className="transform hover:translate-y-6 hover:-rotate-45 duration-500"
+                className={img.rotate}
                 src={img.src}
                 alt={img.alt}
                 width={34}
