@@ -1,0 +1,40 @@
+<svg version="1.1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-81 141 512 512" style="" xml:space="preserve">
+<path class="animation" d="M45.2,632h-97.4V318.2h97.4V632z M-3.6,275.4c-31.2,0-56.4-25.8-56.4-57c0-31.2,25.3-56.4,56.4-56.4
+	c31.2,0,56.4,25.3,56.4,56.4C52.9,249.6,27.6,275.4-3.6,275.4z M409.9,632h-97.2V479.2c0-36.4-0.7-83.1-50.7-83.1
+	c-50.7,0-58.4,39.6-58.4,80.5V632h-97.3V318.2h93.5V361h1.4c13-24.7,44.8-50.7,92.2-50.7c98.6,0,116.7,64.9,116.7,149.3V632H409.9z">
+</path>
+<style>
+	.animation{
+		stroke-width:18;
+		stroke-miterlimit:10;
+		stroke-dasharray:2861 2863;
+		stroke-dashoffset:2862;
+		stroke: rgba(0,0,0,0.6);
+		fill: rgba(0,0,0,0.15);
+		opacity: 10;
+		animation:
+			bRPdAnvF_draw_0 7500ms ease-in 0ms infinite,
+			bRPdAnvF_fade 7500ms linear 0ms infinite;
+	}
+	@keyframes bRPdAnvF_draw{
+		opacity: 0;
+		fill:#000;
+		100%{stroke-dashoffset:0;}
+	}
+	@keyframes bRPdAnvF_fade{
+		0%{stroke-opacity:1;}
+		80%{
+			opacity: 10;
+			fill: rgba(0,0,0,0.5);
+			stroke: #000;
+			stroke-opacity:1;
+		}
+		100%{stroke-opacity:0;}
+	}
+	@keyframes bRPdAnvF_draw_0{
+		13.333333333333334%{stroke-dashoffset: 2862}
+		66.66666666666666%{stroke-dashoffset: 0;}
+		100%{stroke-dashoffset: 0;}
+	}
+</style>
+</svg>

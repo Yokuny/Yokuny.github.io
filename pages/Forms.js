@@ -1,18 +1,7 @@
-function getData(){
-    const formName = document.getElementById("formName").value;
-    if(0 !== formName.length){
-        console.log(formName)}
-    const formEmail = document.getElementById("formEmail").value;
-    if(0 !== formEmail.length){
-        console.log(formEmail)}
-    const formMessage = document.getElementById("formMessage").value;
-    if(0 !== formMessage.length){
-        console.log(formMessage)}
-};
-
+import getFormData from '../utils/getFormData';
 export default function Forms() {
     return (
-        <form className="lg:w-60 w-72 flex justify-center flex-col bg-gray-800 rounded" action="" method="POST">
+        <form className="lg:w-60 w-72 flex justify-center flex-col bg-gray-800 rounded" action="http://localhost:3000/saveForm" method="POST">
             <fieldset className="px-3 py-4">
                 <label className="pl-2 mb-4 text-sm text-green-700 hover:text-green-600" for="formName">Name</label>
                 <br />
@@ -27,7 +16,7 @@ export default function Forms() {
                 <textarea className="px-1 mb-4 w-52 text-sm bg-gray-900 focus:bg-gray-800 text-gray-600 duration-500 rounded" id="formMessage" type="text" name="formMessage" cols="24" rows="10" required></textarea>
                 <br />
                 <div className="flex justify-center">
-                    <button onClick={getData} className="w-16 bg-fuchsia-300 hover:bg-green-700 text-gray-900 duration-500 rounded" type="submit">send</button>
+                    <button onClick={getFormData} className="w-16 bg-fuchsia-300 hover:bg-green-700 text-gray-900 duration-500 rounded" type="disable">send</button>
                 </div>
             </fieldset>
         </form>

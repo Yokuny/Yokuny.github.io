@@ -1,6 +1,6 @@
-import SocialLinks from './SocialLinks';
-import MyProjectsLinks from './MyProjectsLinks';
-import MyPictureAndInfo from './MyPictureAndInfo';
+import SocialLinks from './_SocialLinks';
+import MyProjectsLinks from './_MyProjectsLinks';
+import MyPictureAndInfo from './_MyPictureAndInfo';
 export default function ProfileCard() {
   
   return (
