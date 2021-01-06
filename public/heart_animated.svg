@@ -1,0 +1,30 @@
+<svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="">
+<path class="heart" fill="none" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1
+149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+</path>
+<style>
+    .heart{
+        stroke-width:35;
+        stroke-miterlimit:10;
+        stroke:#77C699;
+        stroke-dasharray:1542 1544;
+        stroke-dashoffset:1543;
+        animation:
+            LSyFEBZc_draw_0 7300ms ease-in 0ms infinite,
+            LSyFEBZc_fade 7300ms linear 0ms infinite;
+    }
+    @keyframes LSyFEBZc_draw{
+        100%{stroke-dashoffset:0;}
+    }
+    @keyframes LSyFEBZc_fade{
+        0%{stroke-opacity:1;}
+        86.3013698630137%{stroke-opacity:1;}
+        100%{stroke-opacity:0;}
+    }
+    @keyframes LSyFEBZc_draw_0{
+        10.95890410958904%{stroke-dashoffset: 1543}
+        65.75342465753424%{ stroke-dashoffset: 0;}
+        100%{ stroke-dashoffset: 0;}
+    }
+</style>
+</svg>

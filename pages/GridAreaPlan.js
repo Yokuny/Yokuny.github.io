@@ -1,6 +1,7 @@
 import ContentField from './ContentField'
 import ProfileCard from './ProfileCard';
 import Forms from './Forms'
+import Footer from './Footer'
 
 export default function GridArea(){
     return (
@@ -13,6 +14,9 @@ export default function GridArea(){
             </div>
             <div className="lg:col-start-4 col-span-1 flex justify-center">
                 <Forms />
+            </div>
+            <div className="lg:col-start-2 lg:col-span-3">
+                <Footer />
             </div>
         </div>
     );
