@@ -30,12 +30,17 @@
 	@keyframes zqAvfCjl_fade{
 		0%{stroke-opacity:1;}
 		81.92771084337349%{
-			opacity:10;
-			fill:rgba(0,0,0,0.15);
+			opacity:5;
+			fill:rgba(0,0,0,0.05);
 			stroke:#000;
 			stroke-opacity:1;
 		}
-		100%{stroke-opacity:0;}
+		100%{
+			opacity:10;
+			fill:rgba(0,0,0,0.15);
+			stroke:#000;
+			stroke-opacity:0;
+		}
 	}
 	@keyframes zqAvfCjl_draw_0{
 		9.63855421686747%{stroke-dashoffset:3725}

@@ -22,9 +22,9 @@
         100%{stroke-opacity:0;}
     }
     @keyframes LSyFEBZc_draw_0{
-        10.95890410958904%{stroke-dashoffset: 1543}
-        65.75342465753424%{ stroke-dashoffset: 0;}
-        100%{ stroke-dashoffset: 0;}
+        10.95890410958904%{stroke-dashoffset:1543}
+        65.75342465753424%{stroke-dashoffset:0;}
+        100%{stroke-dashoffset:0;}
     }
 </style>
 </svg>

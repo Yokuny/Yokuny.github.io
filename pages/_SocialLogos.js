@@ -17,6 +17,7 @@ export default function SocialLogos(){
                         alt={img.alt}
                         width={34}
                         height={25}
+                        quality={100}
                     />
                 </a>
             ))}          

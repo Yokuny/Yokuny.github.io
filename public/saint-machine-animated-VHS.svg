@@ -12,10 +12,10 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background: #0F1112;
+                        background: none;
                         font-family: Nintendoid1;
-                        color: #eee;
                         font-size: 1.2em;
+                        color: #ddd;
                         line-height: 2;
                         text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
                         letter-spacing: 0.125em;

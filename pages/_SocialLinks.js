@@ -10,6 +10,7 @@ export default function SocialLinks() {
             alt='mail image'
             width={26}
             height={32}
+            quality={100}
           />
           <h6 className="ml-2 font-medium text-black">Felipe.vni@hotmail.com</h6>
         </div>

@@ -1,8 +1,7 @@
-import ContentField from './ContentField'
+import ContentField from './_ContentField'
 import ProfileCard from './ProfileCard';
-import Forms from './Forms'
-import Footer from './Footer'
-
+import Forms from './_Forms'
+import Footer from './_Footer'
 export default function GridArea(){
     return (
         <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-5">
