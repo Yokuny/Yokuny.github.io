@@ -1,5 +1,5 @@
-import SocialLinks from './_SocialLinks';
-import Forms from './_Forms'
+import SocialLinks from './subpages/_SocialLinks';
+import Forms from './subpages/_Forms'
 export default function ContactMenu() {
     return (
         <>
@@ -12,4 +12,3 @@ export default function ContactMenu() {
         </>
     );
 };
-        

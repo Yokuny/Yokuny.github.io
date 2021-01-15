@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'orbitronregular';
+    src: url('../public/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../public/orbitron-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.fontOrbitro{
+    font-family: 'orbitronregular';
+}

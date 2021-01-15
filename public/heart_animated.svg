@@ -7,7 +7,7 @@
         stroke-width:35;
         stroke-miterlimit:10;
         stroke:#77C699;
-        stroke-dasharray:1542 1544;
+        stroke-dasharray:1542;
         stroke-dashoffset:1543;
         animation:
             LSyFEBZc_draw_0 7300ms ease-in 0ms infinite,

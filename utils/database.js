@@ -12,6 +12,8 @@ export default async function connect(req, res, next) {
   //nome do banco de dado
   const db = client.db('email-received').collection('messages');
   return {db, client};
+  console.log(db);
+  console.log(client);
 }
 
 // const middleware = nextConnect();
