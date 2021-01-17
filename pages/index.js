@@ -1,10 +1,9 @@
-import GridAreaPlan from './GridAreaPlan'
-import Header from './subpages/_Header'
-export default function Home() {
+import Home from './Home'
+import Layout from '../components/layout'
+export default function FirstPage() {
   return (
-    <>
-      <Header />
-      <GridAreaPlan />
-    </>
+    <Layout>
+      <Home />
+    </Layout>
   );
 };

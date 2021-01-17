@@ -9,16 +9,14 @@ export default function HeartButton() {
             </svg>`
     }
     return(
-        <>
-            <div id='contentHeartLogo' className='h-2'>
-                <Image
-                    onClick={() => imageChange()}
-                    src="/heart_animated.svg"
-                    alt="hearth"
-                    width={30}
-                    height={20}
-                />
-            </div>
-        </>
+        <div id='contentHeartLogo' className='h-2'>
+            <Image
+                onClick={() => imageChange()}
+                src="/heart_animated.svg"
+                alt="hearth"
+                width={30}
+                height={20}
+            />
+        </div>
     )
 }
