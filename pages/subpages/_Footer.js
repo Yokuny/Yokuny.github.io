@@ -12,7 +12,7 @@ export default function Footer() {
                         <Link href="/">Home</Link>
                     </div>
                     <div className="hover:bg-fuchsia-300 hover:text-black duration-500">
-                        <Link href="/">About</Link>
+                        <Link href="/About">About</Link>
                     </div>
                     <a className="hover:bg-fuchsia-300 hover:text-black duration-500" href="https://github.com/Yokuny/Yokuny.github.io">GitHub</a>
                     <div className="hover:bg-fuchsia-300 hover:text-black duration-500">
