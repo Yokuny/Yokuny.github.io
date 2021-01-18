@@ -15,7 +15,6 @@ const TiagoRangelRibeiro = {
         ],
         comment:[
             `Primeiro comentario`,`continuação do comentario`,`referencias se forem necessarias`
-        ],
-        key:`3`
+        ]
     };
 export default TiagoRangelRibeiro;

@@ -2,32 +2,29 @@ import Image from 'next/image';
 import ContentFieldTitle from './subpages/_ContentFieldTitle'
 import TiagoRangelRibeiroDate from '../utils/TiagoRangelRibeiro'
 import Head from 'next/head';
-export default function TiagoRangelRibeiro() {
-    const imgLinks = TiagoRangelRibeiroDate.imgSrc;
-    const postComment = TiagoRangelRibeiroDate.comment;
-    const socialNetworkNamesAndLink =  TiagoRangelRibeiroDate.socialNetworkNamesAndLink;
+export default function TiagoRangelRibeiro({title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment}) {
     return(
         <>
             <Head>
-                <title>{TiagoRangelRibeiroDate.title}</title>
+                <title>{title}</title>
             </Head>
             <div className="lg:col-start-2 lg:col-span-2 flex flex-col justify-start bg-gray-800 mx-2 rounded">
-                <ContentFieldTitle title="Felipe Rangel Ribeiro" />
+                <ContentFieldTitle title="Tiago Rangel Ribeiro" />
                 <ul className="mx-4 mb-8">
-                    <div key={TiagoRangelRibeiroDate.key}>
+                    <div key={title}>
                         <div className="mt-2 grid grid-cols-1 gap-4">
-                            {imgLinks.map(imgLink => (
+                            {imgSrc.map(imgLink => (
                                 <div className="flex justify-cente items-center">
                                     <Image src={imgLink} height={800} width={1200}></Image>
                                 </div>
                             ))}
                         </div>
                         <div className="mt-4">
-                            <a className="text-sm xl:text-lg text-fuchsia-300 hover:bg-fuchsia-300 hover:text-black duration-500" href={TiagoRangelRibeiroDate.projectLink}>{TiagoRangelRibeiroDate.title}</a>
-                            <a className="mx-4 text-xs xl:text-sm text-lightBlue-400 hover:bg-lightBlue-400 hover:text-black duration-500">{TiagoRangelRibeiroDate.platform}</a>
+                            <a className="text-sm xl:text-lg text-fuchsia-300 hover:bg-fuchsia-300 hover:text-black duration-500" href={projectLink}>{title}</a>
+                            <a className="mx-4 text-xs xl:text-sm text-lightBlue-400 hover:bg-lightBlue-400 hover:text-black duration-500">{platform}</a>
                         </div>
                         <div className="mt-4">
-                            {postComment.map(comment => (
+                            {comment.map(comment => (
                                 <p className="text-xs xl:text-sm text-green-600">{comment}</p>
                             ))}
                         </div>
@@ -41,4 +38,12 @@ export default function TiagoRangelRibeiro() {
             </div>
         </>
     )
+}
+export async function getStaticProps() {
+    const {title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment} = TiagoRangelRibeiroDate;
+    return {
+        props: {
+        title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment
+        }
+    }
 }
