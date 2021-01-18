@@ -3,7 +3,7 @@ const MaryangelaCesconettoRainha = {
         projectLink:`https://www.behance.net/gallery/110259039/Maryangela-Cesconetto-Rainha`,
         platform:`Behance`,
         socialNetworkNamesAndLink:[
-            [`babel`,`https://www.instagram.com/marycescor/`],[`facebook`,`asdasd`]
+            [`Instagram`,`https://www.instagram.com/marycescor/`],[`facebook`,`asdasd`]
         ],
         imgSrc:[
             `https://mir-s3-cdn-cf.behance.net/project_modules/1400/585d03110259039.5fe8a751bdc54.jpg`,

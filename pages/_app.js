@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 import Head from 'next/head';
+import Header from '../pages/subpages/_Header'
+import Footer from '../pages/subpages/_Footer'
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -7,7 +9,17 @@ function MyApp({ Component, pageProps }) {
         <title>Yokuny | project pages</title>
         <link rel="icon" href="/page-icon.svg" type="image/svg" />
       </Head>
-      <Component {...pageProps} />
+      <div className="grid grid-cols-1 lg:grid-cols-6">
+        <div className="lg:col-start-2 lg:col-span-4 lg:mt-1 mb-4 mt-2 flex justify-center">
+          <Header />
+        </div>
+        <div className="lg:col-start-2 lg:col-span-4">
+          <Component {...pageProps} />
+        </div>
+        <div className="lg:col-start-2 lg:col-span-4 ">
+          <Footer />
+        </div>
+      </div>
     </>
   )
 };
