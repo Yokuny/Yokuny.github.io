@@ -43,7 +43,7 @@ export async function getStaticProps() {
     const {title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment} = FelipeRangelRibeiroDate;
     return {
         props: {
-        title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment
+            title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment
         }
     }
 }

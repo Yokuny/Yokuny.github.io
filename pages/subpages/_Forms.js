@@ -16,7 +16,7 @@ export default function Forms() {
                 <textarea className="px-1 mb-4 lg:w-52 text-sm bg-gray-700 focus:bg-gray-800 text-gray-600 duration-500 rounded" id="formMessage" type="text" name="formMessage" cols="24" rows="10" required></textarea>
                 <br />
                 <div className="flex justify-center">
-                    <button onClick={getFormData} className="w-16 bg-fuchsia-300 hover:bg-green-700 text-gray-900 duration-500 rounded" type="disable">send</button>
+                    <button onClick={getFormData} className="w-16 bg-fuchsia-300 hover:bg-green-700 text-gray-900 duration-500 rounded" type="disable">Send</button>
                 </div>
             </fieldset>
         </form>

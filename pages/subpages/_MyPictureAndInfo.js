@@ -15,7 +15,7 @@ export default function MyPictureAndInfo(){
                 <p className="font-serif tracking-wider hover:bg-fuchsia-300 hover:text-gray-900 duration-1000">Felipe Rangel Ribeiro</p>
             </h4>
             <h6 className="flex justify-center mb-3 leading-5 text-green-600">
-                <p className="font-Verdana text-xs tracking-wide font-bold hover:bg-green-600 hover:text-gray-900 duration-1000">@Yokuny</p>
+                <p className="font-Verdana text-xs tracking-wide font-bold hover:bg-green-600 hover:text-gray-900 duration-1000">@user09111996</p>
             </h6>
         </div>
     );
