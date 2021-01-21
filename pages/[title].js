@@ -1,8 +1,9 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import ContentFieldTitle from './subpages/_ContentFieldTitle'
-import FelipeRangelRibeiroDate from '../utils/FelipeRangelRibeiro'
-import Head from 'next/head';
-export default function FelipeRangelRibeiro({title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment}) {
+import getContentsTitles from '../utils/getContentsTitles'
+import getOnePostData from '../utils/getOnePostData'
+export default function Post({title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment}) {
     return(
         <>
             <Head>
@@ -15,7 +16,7 @@ export default function FelipeRangelRibeiro({title, projectLink, platform, socia
                         <div className="mt-2 grid grid-cols-1 gap-4">
                             {imgSrc.map(imgLink => (
                                 <div key={imgLink} className="flex justify-cente items-center">
-                                    <Image src={imgLink} height={800} width={1200}></Image>
+                                    <Image src={imgLink} alt="No loaded image" height={800} width={1200} quality={100}></Image>
                                 </div>
                             ))}
                         </div>
@@ -39,11 +40,37 @@ export default function FelipeRangelRibeiro({title, projectLink, platform, socia
         </>
     )
 }
-export async function getStaticProps() {
-    const {title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment} = FelipeRangelRibeiroDate;
-    return {
-        props: {
-            title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment
-        }
-    }
+//aqui pegou os arquivos e passou como paramento pra essa pagina
+//is now using the getPostData function in getStaticProps to get the post data and return it as props
+export async function getStaticProps({ params }) {
+  // const postData = await getPostData(params.title)
+  const dataName = params.title;
+  const allDataContent = await getOnePostData(dataName);
+  const {title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment} = allDataContent;
+  return {
+      props: {
+          title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment
+      }
+  }
+  //retorna ao 'props'
+}
+//aqui esta chamando a função do lib e pegando o nome dos arquivos
+export async function getStaticPaths() {
+  //const paths = getAllPostIds()
+  // return {
+  //   paths,
+  //   fallback: false
+  // }
+  const eachFile = getContentsTitles();
+  // eachFile =
+  // [
+  //   { params: { title: 'FelipeRangelRibeiro' } },
+  //   { params: { title: 'MaryangelaCesconettoRainha' } },
+  //   { params: { title: 'TiagoRangelRibeiro' } }
+  // ]
+  return {
+      paths: eachFile,
+      fallback: false
+  }
+  //retorna ao 'getStaticProps'
 }

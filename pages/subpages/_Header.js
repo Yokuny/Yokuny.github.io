@@ -6,7 +6,7 @@ export default function Header(){
             <Image
                 className="cursor-pointer"
                 src="/saint-machine-animated-VHS.svg"
-                alt='mail image'
+                alt='Saint-Machine logo image'
                 width={800}
                 height={100}
             />

@@ -1,4 +1,5 @@
 const TiagoRangelRibeiro = {
+        file:`TiagoRangelRibeiro`,
         title:`Tiago Rangel Ribeiro`,
         projectLink:`https://www.behance.net/gallery/110443577/Tiago-Rangel-Ribeiro`,
         platform:`Behance`,
