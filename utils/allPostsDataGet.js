@@ -5,9 +5,9 @@ import WemillyVarjaoBorges from '../content/WemillyVarjaoBorges'
 export default function allPostsDataGet(){
     //mudei para const. olhar se nao vai dar erro
     const allData = [];
-    allData.push(TiagoRangelRibeiro);
-    allData.push(FelipeRangelRibeiro);
-    allData.push(MaryangelaCesconettoRainha);
     allData.push(WemillyVarjaoBorges);
+    allData.push(MaryangelaCesconettoRainha);
+    allData.push(FelipeRangelRibeiro);
+    allData.push(TiagoRangelRibeiro);
     return allData;
 }

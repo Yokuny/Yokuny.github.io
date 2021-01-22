@@ -12,7 +12,7 @@ export default function SocialLinks() {
             height={32}
             quality={100}
           />
-          <h6 className="ml-2 font-medium text-black">Felipe.vni@hotmail.com</h6>
+          <h6 className="ml-2 font-medium text-sm text-black">Felipe.vni@hotmail.com</h6>
         </div>
         <div className="px-8 py-1 flex justify-evenly items-center bg-green-700 hover:bg-green-600 duration-1000">
           <SocialLogos />
