@@ -4,7 +4,7 @@ const WemillyVarjaoBorges = {
     projectLink:`https://www.behance.net/gallery/111774865/Wemilly-Varjao-Borges`,
     platform:`Behance`,
     socialNetworkNamesAndLink:[
-        [`instagram`,`https://www.instagram.com/wemilly_v.b/`],[`facebook`,`asdasd`]
+        [`instagram`,`https://www.instagram.com/wemilly_v.b/`]
     ],
     imgSrc:[
         `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a45b68111774865.600836c472d19.jpg`,

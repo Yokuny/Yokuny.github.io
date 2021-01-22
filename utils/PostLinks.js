@@ -1,4 +1,39 @@
+// {
+//     title: '',
+//     platform: '',
+//     link: ''
+// },
 const PostLinks = [
+    {
+        title: 'thinking differently from your peers.',
+        platform: 'magazine',
+        link: 'http://paulgraham.com/think.html'
+    },
+    {
+        title: 'o que significa tornar-se pessoa?',
+        platform: 'blog',
+        link: 'https://tornarsepessoa.com.br/o-que-significa-tornar-se-pessoa/'
+    },   
+    {
+        title: 'sleep duration is associated with white matter microstructure and cognitive performance in healthy adults',
+        platform: 'magazine',
+        link: 'https://onlinelibrary.wiley.com/doi/10.1002/hbm.25132'
+    },
+    {
+        title: 'writing is the art of thinking clearly',
+        platform: 'blog',
+        link: 'https://www.julian.com/guide/write/intro'
+    },
+    {
+        title: 'you just keep on trying till you run out of cake',
+        platform: 'blog',
+        link: 'https://astralcodexten.substack.com/p/still-alive'
+    },
+    {
+        title: 'the influence of breathing on the central nervous system',
+        platform: 'magazine',
+        link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6070065/'
+    },
     {
         title: 'what I’ve learned in 45 years in the software industry',
         platform: 'magazine',
