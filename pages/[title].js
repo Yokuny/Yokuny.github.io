@@ -22,16 +22,16 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
                         </div>
                         <div className="mt-4">
                             <a className="text-sm xl:text-lg text-fuchsia-300 hover:bg-fuchsia-300 hover:text-black duration-500" href={projectLink}>{title}</a>
-                            <a className="mx-4 text-xs xl:text-sm text-lightBlue-400 hover:bg-lightBlue-400 hover:text-black duration-500">{platform}</a>
+                            <a className="mx-3 text-xs xl:text-sm text-lightBlue-400 hover:bg-lightBlue-400 hover:text-black duration-500">{platform}</a>
                         </div>
                         <div className="mt-4">
                             {comment.map(comment => (
-                                <p key={comment} className="text-xs xl:text-sm text-green-600">{comment}</p>
+                                <p key={comment} className="mx-4 mr-20 text-xs xl:text-sm text-green-600">{comment}</p>
                             ))}
                         </div>
-                        <div className="mt-4">
+                        <div className="mt-6">
                             {socialNetworkNamesAndLink.map(nameAndLink => (
-                                <a key={nameAndLink} href={nameAndLink[1]} className="mx-2 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{nameAndLink[0]}</a>
+                                <a key={nameAndLink} href={nameAndLink[1]} className="mx-2 px-2 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{nameAndLink[0]}</a>
                             ))}
                         </div>
                     </div>
