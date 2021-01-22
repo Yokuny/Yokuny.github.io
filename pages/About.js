@@ -1,13 +1,13 @@
 export default function about(){
     return(
         <>
-            <div className="p-6 bg-gray-800">
+            <div className="p-6 bg-gray-800 rounded">
                 <br/>
                 <div className="px-5">
                     <p className="text-green-600">Vou tentar dizer sobre mim. Mesmo sem saber extamente quem sou</p>
                 </div>
                 <br/>
-                <div className="px-16 text-lightBlue-400 bg-gray-800">
+                <div className="px-16 text-lightBlue-400 bg-gray-800 rounded">
                     <quote >
                         <br/>
                         "Mas sobre o que um homem de bem pode falar com mais satisfação?
@@ -24,7 +24,7 @@ export default function about(){
                     <p className="text-green-600">Oque poderia expressar melhor oque sinto e sou. Nos meus melhores momentos, seria algo que Nietzsche falou, oque melhor poderia representar seria:</p>
                 </div>
                 <br/>
-                <div className="px-16 text-lightBlue-400 bg-gray-800">
+                <div className="px-16 text-lightBlue-400 bg-gray-800 rounded">
                     <quote>
                         <br/>
                         Qual é o maior maior ato para o ser?

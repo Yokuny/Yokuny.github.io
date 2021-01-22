@@ -2,7 +2,7 @@ import Link from 'next/link';
 import HeartButton from './_HeartButton'
 export default function Footer() {
     return(
-        <div className="lg:mt-20 mt-10 bg-gray-800">
+        <div className="lg:mt-20 mt-10 bg-gray-800 rounded">
             <div className="sm:mx-8 p-4 pb-6 grid grid-cols-4">
                 <div className="flex justify-start">
                     <HeartButton />

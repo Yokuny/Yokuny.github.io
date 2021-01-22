@@ -15,7 +15,7 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
                     <div key={title}>
                         <div className="mt-2 grid grid-cols-1 gap-4">
                             {imgSrc.map(imgLink => (
-                                <div key={imgLink} className="flex justify-cente items-center">
+                                <div key={imgLink} className="flex justify-center items-center">
                                     <Image src={imgLink} alt="No loaded image" height={800} width={1200} quality={100}></Image>
                                 </div>
                             ))}
@@ -31,7 +31,7 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
                         </div>
                         <div className="mt-4">
                             {socialNetworkNamesAndLink.map(nameAndLink => (
-                                <a key={nameAndLink} href={nameAndLink[1]} className="mx-2 p-0.5 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{nameAndLink[0]}</a>
+                                <a key={nameAndLink} href={nameAndLink[1]} className="mx-2 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{nameAndLink[0]}</a>
                             ))}
                         </div>
                     </div>
