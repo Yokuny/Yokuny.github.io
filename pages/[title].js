@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import ContentFieldTitle from './subpages/_ContentFieldTitle'
+import ContentFieldTitle from './pages/_ContentFieldTitle'
 import getContentsTitles from '../utils/getContentsTitles'
 import getOnePostData from '../utils/getOnePostData'
 export default function Post({title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment}) {
@@ -10,7 +10,7 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
                 <title>{title}</title>
             </Head>
             <div className="lg:col-start-2 lg:col-span-2 flex flex-col justify-start bg-gray-800 mx-2 rounded">
-                <ContentFieldTitle title="Felipe Rangel Ribeiro" />
+                <ContentFieldTitle title={title} />
                 <ul className="mx-4 mb-8">
                     <div key={title}>
                         <div className="mt-2 grid grid-cols-1 gap-4">
@@ -43,7 +43,7 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
 //aqui pegou os arquivos e passou como paramento pra essa pagina
 //is now using the getPostData function in getStaticProps to get the post data and return it as props
 export async function getStaticProps({ params }) {
-  // const postData = await getPostData(params.title)
+    //params retorna . o nome da path(rota) digitada na barra de navegação
   const dataName = params.title;
   const allDataContent = await getOnePostData(dataName);
   const {title, projectLink, platform, socialNetworkNamesAndLink, imgSrc, comment} = allDataContent;

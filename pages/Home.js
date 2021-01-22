@@ -1,6 +1,6 @@
-import ContentField from './subpages/_ContentField'
-import ProfileCard from './subpages/_ProfileCard';
-import Forms from './subpages/_Forms'
+import ContentField from './pages/_ContentField'
+import ProfileCard from './pages/_ProfileCard';
+import Forms from './pages/_Forms'
 export default function Home(){
     return (
         <div className="grid grid-rows-2 grid-cols-1 lg:grid-cols-3 gap-x-4">
