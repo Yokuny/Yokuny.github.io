@@ -4,7 +4,10 @@ const FelipeRangelRibeiro = {
     projectLink:`https://www.behance.net/gallery/110190745/trail`,
     platform:`Behance`,
     socialNetworkNamesAndLink:[
-        [`instagram`,`https://www.instagram.com/user09111996//`],[`facebook`,`https://www.facebook.com/Yokuny.789/`]
+        [`instagram`,`https://www.instagram.com/user09111996//`],
+        [`facebook`,`https://www.facebook.com/Yokuny.789/`],
+        [`behance`,`https://www.behance.net/Yokuny`],
+        
     ],
     imgSrc:[
         `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a2c28b110190745.5fe65f7947ae3.png`,

@@ -5,6 +5,21 @@
 // },
 const PostLinks = [
     {
+        title: 'crystal close up',
+        platform: 'magazine',
+        link: 'https://www.u-tokyo.ac.jp/focus/en/press/z0508_00161.html'
+    },
+    {
+        title: 'how hard should I push myself?',
+        platform: 'blog',
+        link: 'https://superorganizers.every.to/p/how-hard-should-i-push-myself'
+    },
+    {
+        title: 'the great filter - are we almost past it?',
+        platform: 'blog',
+        link: 'https://mason.gmu.edu/~rhanson/greatfilter.html'
+    },
+    {
         title: 'thinking differently from your peers.',
         platform: 'magazine',
         link: 'http://paulgraham.com/think.html'
