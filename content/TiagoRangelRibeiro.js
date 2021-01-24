@@ -5,7 +5,7 @@ const TiagoRangelRibeiro = {
     platform:`Behance`,
     socialNetworkNamesAndLink:[
         [`instagram`,`https://www.instagram.com/marycescor/`],
-        [`facebook`,`asdasd`]
+        [`facebook`,`https://www.facebook.com/profile.php?id=100003097824126`]
     ],
     imgSrc:[
         `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/2e5f5b110443577.5fed0cb67077f.jpg`,
