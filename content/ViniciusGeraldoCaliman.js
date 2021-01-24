@@ -15,7 +15,10 @@ const ViniciusGeraldoCaliman = {
         `https://mir-cdn.behance.net/v1/rendition/project_modules/1400/c41842112021557.600ccbb871864.jpg`
     ],
     comment:[
-        `Primeiro comentario`,`continuação do comentario`,`referencias se forem necessarias`
+        `A questão toda, a minha maior canalhice, se resumia a que a todo momento, até no instante do ódio mais intenso, eu percebia, envergonhado, que não só não era mau, como não era nem mesmo uma pessoa enfurecida, apenas assustava pardais sem nenhum propósito e com isso me divertia.`,
+        `Minha boca espumava, mas se me trouxessem um brinquedinho ou um chazinho com açúcar, na certa eu me acalmaria. Ficaria até enternecido, embora depois, provavelmente, rangeria os dentes para mim mesmo e, de vergonha, passaria alguns meses com insônia. Esse é o meu jeito de ser.`,
+        `-`,
+        `Notas do subsolo - Fiódor Dostoiévski`
     ]
 };
 export default ViniciusGeraldoCaliman;
