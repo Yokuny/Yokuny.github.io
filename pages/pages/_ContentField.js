@@ -8,9 +8,9 @@ export default function ContentField(){
             <ul className="mx-6 mb-8">
                 <MyPostsLinkContent />
             </ul>
-            <ul className="mx-6 mb-8">
+            {/* <ul className="mx-6 mb-8">
                 <LinkContent />
-            </ul>
+            </ul> */}
         </div>
     )
 };
