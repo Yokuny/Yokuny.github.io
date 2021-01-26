@@ -1,8 +1,8 @@
 import Image from 'next/image';
 export default function MyPictureAndInfo(){
     return (
-        <div className="px-3 py-1">
-            <div className="flex justify-center px-3 pb-2 lg:w-52">
+        <div className="flex flex-col justify-center py-1">
+            <div className="flex justify-center m-auto pb-2 lg:w-52">
             <Image
                 className="rounded"
                 src="/profile1.jpg"
