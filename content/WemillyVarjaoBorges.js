@@ -1,3 +1,5 @@
+const menor = 800
+const maior = 1200
 const WemillyVarjaoBorges = {
     file:`WemillyVarjaoBorges`,
     title:`Wemilly Varjão Borges`,
@@ -7,12 +9,12 @@ const WemillyVarjaoBorges = {
         [`instagram`,`https://www.instagram.com/wemilly_v.b/`]
     ],
     imgSrc:[
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a45b68111774865.600836c472d19.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/c27e82111774865.600836c473bd9.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d54cec111774865.600836c47474a.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/fs/87dea6111774865.600b105ac5471.jpg`,
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/ff9953111774865.600836c475269.jpg`,
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/8771cc111774865.600836c475c10.jpg`
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a45b68111774865.600836c472d19.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/c27e82111774865.600836c473bd9.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d54cec111774865.600836c47474a.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/fs/87dea6111774865.600b105ac5471.jpg`, menor, maior],
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/ff9953111774865.600836c475269.jpg`, menor, maior],
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/8771cc111774865.600836c475c10.jpg`, menor, maior]
     ],
     comment:[
         `Suspiras em silêncio e queres que ela te adivinhe. Nunca chegarás ao cabo. Tem-se comparado o amor à guerra. Assim é. No amor, querem-se atos de bravura como na guerra. Avança afoitamente e vencerás.`,

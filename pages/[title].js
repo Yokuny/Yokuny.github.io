@@ -16,7 +16,7 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
                         <div className="mt-2 grid grid-cols-1 gap-4">
                             {imgSrc.map(imgLink => (
                                 <div key={imgLink} className="flex justify-center items-center">
-                                    <Image src={imgLink} alt="No loaded image" height={800} width={1200} quality={100}></Image>
+                                    <Image src={imgLink[0]} alt="No loaded image" height={imgLink[1]} width={imgLink[2]} quality={100}></Image>
                                 </div>
                             ))}
                         </div>

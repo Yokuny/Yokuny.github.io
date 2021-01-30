@@ -1,3 +1,5 @@
+const menor = 800
+const maior = 1200
 const AlexiaCsajkovicsFilgueiras = {
     file:"AlexiaCsajkovicsFilgueiras",
     title:`Alexia Csajkovics Filgueiras`,
@@ -9,11 +11,11 @@ const AlexiaCsajkovicsFilgueiras = {
         [`pinterest`,`https://br.pinterest.com/alexiacsajkovicsfilgueiras`],
     ],
     imgSrc:[
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c04df9112159099.600f823b81b09.jpg`,
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/af73c2112159099.600f823b83e20.jpg`,
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/9c0c84112159099.600f848011102.jpg`,
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c2ace5112159099.60100c3a93c98.jpg`,
-        `https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/4f2ee1112159099.600f86918699f.jpg`
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c04df9112159099.600f823b81b09.jpg`, menor, maior],
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/af73c2112159099.600f823b83e20.jpg`, menor, maior],
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/9c0c84112159099.600f848011102.jpg`, menor, maior],
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c2ace5112159099.60100c3a93c98.jpg`, menor, maior],
+        [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/4f2ee1112159099.600f86918699f.jpg`, 940, maior]
     ],
     comment:[
         `Há no homem duas pessoas iguais, que se separam às vezes, como acontece durante o sono, em que uma dorme e a outra sai a caçar e passear.`,

@@ -1,3 +1,5 @@
+const menor = 800
+const maior = 1200
 const TiagoRangelRibeiro = {
     file:`TiagoRangelRibeiro`,
     title:`Tiago Rangel Ribeiro`,
@@ -8,12 +10,12 @@ const TiagoRangelRibeiro = {
         [`facebook`,`https://www.facebook.com/profile.php?id=100003097824126`]
     ],
     imgSrc:[
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/2e5f5b110443577.5fed0cb67077f.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/dc9fa8110443577.5fed0cb671d76.png`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d910c9110443577.5fed0cb672af1.png`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/58e5e0110443577.5fed0cb67230f.png`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/3bade3110443577.5fed0e20345bd.png`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/92462f110443577.5fed0cb670ef0.png`
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/2e5f5b110443577.5fed0cb67077f.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/dc9fa8110443577.5fed0cb671d76.png`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d910c9110443577.5fed0cb672af1.png`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/58e5e0110443577.5fed0cb67230f.png`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/3bade3110443577.5fed0e20345bd.png`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/92462f110443577.5fed0cb670ef0.png`, menor, maior]
     ],
     comment:[
         `A vida, no que tem de melhor é um processo que flui, que se altera e onde nada está fixo.`,

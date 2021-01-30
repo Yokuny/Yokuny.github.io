@@ -1,3 +1,5 @@
+const menor = 800
+const maior = 1200
 const MaryangelaCesconettoRainha = {
     file:`MaryangelaCesconettoRainha`,
     title:`Maryangela Cesconetto Rainha`,
@@ -8,11 +10,11 @@ const MaryangelaCesconettoRainha = {
         [`Twitter`,`https://twitter.com/angelxmary`]
     ],
     imgSrc:[
-        `https://mir-s3-cdn-cf.behance.net/project_modules/1400/585d03110259039.5fe8a751bdc54.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4ced2d110259039.5ffa26b736960.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e0e216110259039.5fe8a751bed46.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/ac91fc110259039.5fe8a751bf4bc.jpg`,
-        `https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/702d98110259039.5fe8a751be728.jpg`
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/1400/585d03110259039.5fe8a751bdc54.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4ced2d110259039.5ffa26b736960.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e0e216110259039.5fe8a751bed46.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/ac91fc110259039.5fe8a751bf4bc.jpg`, menor, maior],
+        [`https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/702d98110259039.5fe8a751be728.jpg`, menor, maior]
     ],
     comment:[
         `As pessoas têm, fundamentalmente, uma orientação positivo.`,
