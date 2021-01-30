@@ -8,7 +8,7 @@
 
 My project website
 
-If you want to run this application in your machine:\n
+If you want to run this application in your machine:
 First make a copy of this project in your machine. (You will need Git installed in your computer) Install it.
 With the git disponible to use, type in your terminal:
 - `git clone https://github.com/Yokuny/Yokuny.github.io.git`
