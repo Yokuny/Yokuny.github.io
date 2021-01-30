@@ -6,14 +6,18 @@ import ViniciusGeraldoCaliman from '../content/ViniciusGeraldoCaliman'
 import AlexiaCsajkovicsFilgueiras from '../content/AlexiaCsajkovicsFilgueiras'
 import RosilaneVasconcelosBraga from '../content/RosilaneVasconcelosBraga'
 export default function allPostsDataGet(){
-    //mudei para const. olhar se nao vai dar erro
+    const firstPackOfData = [];
+    firstPackOfData.unshift(TiagoRangelRibeiro);
+    firstPackOfData.unshift(FelipeRangelRibeiro);
+    firstPackOfData.unshift(MaryangelaCesconettoRainha);
+    firstPackOfData.unshift(WemillyVarjaoBorges);
+    firstPackOfData.unshift(ViniciusGeraldoCaliman);
+    const secondPackOfData = [];
+    secondPackOfData.unshift(AlexiaCsajkovicsFilgueiras);
+    secondPackOfData.unshift(RosilaneVasconcelosBraga);
+
     const allData = [];
-    allData.push(RosilaneVasconcelosBraga);
-    allData.push(AlexiaCsajkovicsFilgueiras);
-    allData.push(ViniciusGeraldoCaliman);
-    allData.push(WemillyVarjaoBorges);
-    allData.push(MaryangelaCesconettoRainha);
-    allData.push(FelipeRangelRibeiro);
-    allData.push(TiagoRangelRibeiro);
+    allData.unshift(firstPackOfData);
+    allData.unshift(secondPackOfData);
     return allData;
 }
