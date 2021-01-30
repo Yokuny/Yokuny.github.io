@@ -2,7 +2,6 @@ import Link from 'next/link'
 import allPostsDataGet from '../../utils/allPostsDataGet'
 export default function LinkContent(){
     const allPostsData = allPostsDataGet();
-    console.log(allPostsData);
     return(
         <>
         {allPostsData.map(content =>
