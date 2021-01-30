@@ -26,7 +26,7 @@ export default function Post({title, projectLink, platform, socialNetworkNamesAn
                         </div>
                         <div className="mt-4">
                             {comment.map(comment => (
-                                <p key={comment} className="mx-4 mr-20 text-xs xl:text-sm text-green-600">{comment}</p>
+                                <p key={comment} className="mx-4 lg:mr-20 mr-7 text-xs xl:text-sm text-green-600">{comment}</p>
                             ))}
                         </div>
                         <div className="mt-6">

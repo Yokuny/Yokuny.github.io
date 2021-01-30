@@ -2,12 +2,11 @@ export default function about(){
     return(
         <>
             <div className="p-6 bg-gray-800 rounded">
-                <br/>
-                <div className="px-5">
-                    <p className="text-green-600">Vou tentar dizer sobre mim. Mesmo sem saber extamente quem sou</p>
+                <div>
+                    <a className="p-0.5 text-black bg-green-600">About</a>
                 </div>
                 <br/>
-                <div className="px-16 text-lightBlue-400 bg-gray-800 rounded">
+                <div className="lg:px-16 px-4 text-xs lg:text-sm text-green-600 bg-gray-900 rounded">
                     <quote >
                         <br/>
                         "Mas sobre o que um homem de bem pode falar com mais satisfação?
@@ -18,13 +17,16 @@ export default function about(){
                     </quote>
                     <br/>
                     <br/>
+                    <quote>Notas do subsolo - Fiodor Dostoievski</quote>
+                    <br/>
+                    <br/>
                 </div>
                 <br/>
-                <div className="px-5">
-                    <p className="text-green-600">Oque poderia expressar melhor oque sinto e sou. Nos meus melhores momentos, seria algo que Nietzsche falou, oque melhor poderia representar seria:</p>
+                <div className="p-4 bg-gray-900">
+                    <p className="lg:ml-4 text-xs lg:text-sm text-lightBlue-400">Oque poderia expressar melhor oque sou e sinto. Nos meus melhores momentos, Nietzsche já disse e com maestria:</p>
                 </div>
                 <br/>
-                <div className="px-16 text-lightBlue-400 bg-gray-800 rounded">
+                <div className="lg:px-16 px-4 text-xs lg:text-sm text-green-600 bg-gray-900 rounded">
                     <quote>
                         <br/>
                         Qual é o maior maior ato para o ser?
@@ -41,6 +43,9 @@ export default function about(){
                         <br/>
                         A hora em que dizeis: “que importa minha compaixão? a compaixão não é a cruz em que pregam aquele que ama os homens? mas minha compaixão não é crucificação”.
                     </quote>
+                    <br/>
+                    <br/>
+                    <quote>Thus Spoke Zarathustra - Friedrich Nietzsche</quote>
                     <br/>
                     <br/>
                 </div>
