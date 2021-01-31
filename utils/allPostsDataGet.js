@@ -5,6 +5,7 @@ import WemillyVarjaoBorges from '../content/WemillyVarjaoBorges'
 import ViniciusGeraldoCaliman from '../content/ViniciusGeraldoCaliman'
 import AlexiaCsajkovicsFilgueiras from '../content/AlexiaCsajkovicsFilgueiras'
 import RosilaneVasconcelosBraga from '../content/RosilaneVasconcelosBraga'
+import AugustoCesarDeAndradeFarias from '../content/AugustoCesarDeAndradeFarias'
 export default function allPostsDataGet(){
     const firstPackOfData = [];
     firstPackOfData.unshift(TiagoRangelRibeiro);
@@ -15,6 +16,7 @@ export default function allPostsDataGet(){
     const secondPackOfData = [];
     secondPackOfData.unshift(AlexiaCsajkovicsFilgueiras);
     secondPackOfData.unshift(RosilaneVasconcelosBraga);
+    secondPackOfData.unshift(AugustoCesarDeAndradeFarias);
 
     const allData = [];
     allData.unshift(firstPackOfData);
