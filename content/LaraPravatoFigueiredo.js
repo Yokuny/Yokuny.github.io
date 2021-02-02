@@ -7,8 +7,9 @@ const LaraPravatoFigueiredo = {
     projectLink:`https://www.behance.net/gallery/112649487/Lara-Pravato-Figueiredo`,
     platform:`Behance`,
     socialNetworkNamesAndLink:[
-        [`instagram`,`https://www.instagram.com/_rosalinha/`],
-        [`facebook`,`https://www.facebook.com/rosilane.vasconcelos.56`]
+        [`instagram`,`https://www.instagram.com/larapravato/`],
+        [`facebook`,`https://www.facebook.com/LaraPravatof`],
+        [`pinterest`,`https://br.pinterest.com/larapravato/_saved/`]
     ],
     imgSrc:[
         [`https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/9cdac1112649487.6018996c903c4.jpg`, menor, maior],
