@@ -1,6 +1,6 @@
 <div align="center">
 	<br>
-	<a href="https://yokuny.vercel.app/">
+	<a href="https://saint-machine.vercel.app/">
 		<img src="./public/saint-machine-animated-VHS.svg" width="800" height="100">
     </a>
 	<br>
