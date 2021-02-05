@@ -21,9 +21,11 @@ export default function allPostsDataGet(){
     secondPackOfData.unshift(AugustoCesarDeAndradeFarias);
     secondPackOfData.unshift(AmandaDaSilvaSouza);
     secondPackOfData.unshift(LaraPravatoFigueiredo);
-
+    const thirdPackOfData = [];
+    thirdPackOfData.unshift(LaraPravatoFigueiredo)
     const allData = [];
     allData.unshift(firstPackOfData);
     allData.unshift(secondPackOfData);
+    allData.unshift(thirdPackOfData);
     return allData;
 }

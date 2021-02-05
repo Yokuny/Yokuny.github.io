@@ -4,22 +4,38 @@ function LinkContent(){
     const allPostsData = allPostsDataGet();
     const backwardWords = "<<";
     const fowardWords = ">>";
+    let currentPage = 0;
+    const numberOfPages = allPostsData.length;
     function previousPage() {
-        const a = document.getElementById("0");
-        const b = document.getElementById("1");
-        b.style.display = 'none'
-        a.style.display = 'initial'
+        const getCurrentRenderedElement = document.getElementById(currentPage);
+        getCurrentRenderedElement.style.display = 'none'
+        console.log(currentPage);
+        if(currentPage==0){
+            currentPage = numberOfPages-1;
+        }else{
+            currentPage -= 1;
+        }
+        console.log(currentPage);
+        const getNewElementToRender = document.getElementById(currentPage);
+        getNewElementToRender.style.display = 'initial'
     }
     function nextPage() {
-        const a = document.getElementById("1");
-        const b = document.getElementById("0");
-        b.style.display = 'none'
-        a.style.display = 'initial'
+        const getCurrentRenderedElement = document.getElementById(currentPage);
+        getCurrentRenderedElement.style.display = 'none'
+        console.log(currentPage);
+        if(currentPage==numberOfPages-1){
+            currentPage=0;
+        }else{
+            currentPage++;
+        }
+        console.log(currentPage);
+        const getNewElementToRender = document.getElementById(currentPage);
+        getNewElementToRender.style.display = 'initial'
     }
     return(
         <>
         {allPostsData.map((content,index) =>
-            <div id={index} className="mb-3">
+            <div id={index} className="mb-3 hidden">
             {content.map(({ file, title, platform }) => 
             <>
                 <Link href={`/${file}`}>
