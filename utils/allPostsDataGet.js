@@ -15,17 +15,18 @@ export default function allPostsDataGet(){
     firstPackOfData.unshift(MaryangelaCesconettoRainha);
     firstPackOfData.unshift(WemillyVarjaoBorges);
     firstPackOfData.unshift(ViniciusGeraldoCaliman);
+    firstPackOfData.unshift(AlexiaCsajkovicsFilgueiras);
     const secondPackOfData = [];
-    secondPackOfData.unshift(AlexiaCsajkovicsFilgueiras);
     secondPackOfData.unshift(RosilaneVasconcelosBraga);
     secondPackOfData.unshift(AugustoCesarDeAndradeFarias);
     secondPackOfData.unshift(AmandaDaSilvaSouza);
     secondPackOfData.unshift(LaraPravatoFigueiredo);
-    const thirdPackOfData = [];
-    thirdPackOfData.unshift(LaraPravatoFigueiredo)
+    // const thirdPackOfData = [];
+    // thirdPackOfData.unshift()
+
     const allData = [];
     allData.unshift(firstPackOfData);
     allData.unshift(secondPackOfData);
-    allData.unshift(thirdPackOfData);
+    // allData.unshift(thirdPackOfData);
     return allData;
 }
