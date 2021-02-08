@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/page-icon.svg" type="image/svg" />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-6">
-        <div className="lg:col-start-2 lg:col-span-4 lg:mt-1 mb-4 mt-2 flex justify-center">
+        <div className="lg:col-start-2 lg:col-span-4 lg:-mt-1 lg:mb-4 mt-2 flex justify-center">
           <Header />
         </div>
         <div className="lg:col-start-2 lg:col-span-4">

@@ -9,8 +9,8 @@ import AugustoCesarDeAndradeFarias from '../content/AugustoCesarDeAndradeFarias'
 import AmandaDaSilvaSouza from '../content/AmandaDaSilvaSouza'
 import LaraPravatoFigueiredo from '../content/LaraPravatoFigueiredo'
 import AliceUliana from '../content/AliceUliana'
-import DiegoDiasCosta from '../content/DiegoDiasCosta'
 import GiovanaBonassina from '../content/GiovanaBonassina'
+import DiegoDiasCosta from '../content/DiegoDiasCosta'
 export default function allPostsDataGet(){
     const firstPackOfData = [];
     firstPackOfData.unshift(TiagoRangelRibeiro);

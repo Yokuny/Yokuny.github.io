@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="flex justify-start">
                     <HeartButton />
                 </div>
-                <div className="flex justify-end text-fuchsia-300 text-xs 2xl:text-sm col-start-2 col-span-3 lg:gap-5">
+                <div className="flex justify-end text-fuchsia-300 text-xs 2xl:text-sm col-start-2 col-span-3 lg:gap-3">
                     <div className="mx-1 md:mx-2 text-center hover:bg-fuchsia-300 hover:text-black duration-500">
                         <Link href="/">Home</Link>
                     </div>
