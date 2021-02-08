@@ -2,11 +2,10 @@ import Link from 'next/link'
 import allPostsDataGet from '../../utils/allPostsDataGet'
 function LinkContent(){
     const allPostsData = allPostsDataGet();
-    const backwardWords = "<<";
-    const fowardWords = ">>";
+    const backwardWords = "<";
+    const fowardWords = ">";
     let currentPage = 0;
     const numberOfPages = allPostsData.length;
-
     function previousPage() {
         const getCurrentRenderedElement = document.getElementById(currentPage);
         getCurrentRenderedElement.style.display = 'none'
@@ -35,7 +34,6 @@ function LinkContent(){
         const renderedElement = document.getElementById("rendered");
         renderedElement.style.display = 'none';
     }
-
     return(
         <>
         {allPostsData.map((content,index) =>
@@ -52,7 +50,6 @@ function LinkContent(){
             )}
             </div>
         )}
-
         <div id="rendered" className="mb-3">
             {allPostsData[0].map(({ file, title, platform }) =>
                 <Link href={`/${file}`}>
@@ -65,11 +62,10 @@ function LinkContent(){
         </div>
 
         <div className="flex justify-center mt-6">
-            <button onClick={previousPage} className="mx-2 px-3 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{backwardWords}</button>
-            <button onClick={nextPage} className="mx-2 px-3 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{fowardWords}</button>
+            <button onClick={previousPage} className="mx-2 px-4 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{backwardWords}</button>
+            <button onClick={nextPage} className="mx-2 px-4 p-1 border text-xs xl:text-sm text-fuchsia-300 bg-gray-900 border-fuchsia-300 hover:text-gray-900 hover:border-gray-900 hover:bg-fuchsia-300 duration-500">{fowardWords}</button>
         </div>
         </>
     )
 }
-
 export default LinkContent;
