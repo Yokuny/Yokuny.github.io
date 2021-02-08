@@ -3,7 +3,7 @@ import LinkContent from './_LinkContent'
 import MyPostsLinkContent from './_MyPostsLinkContent'
 export default function ContentField(){
     return(
-        <div className="flex flex-col justify-start bg-gray-800 lg:mx-2 rounded">
+        <div className="flex flex-col justify-start bg-gray-800 -mx-2 md:mx-3 rounded">
             <ContentFieldTitle title="Web log" />
             <ul className="mx-6 mb-8">
                 <MyPostsLinkContent />
