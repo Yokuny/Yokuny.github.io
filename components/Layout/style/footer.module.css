@@ -1,0 +1,29 @@
+.footer{
+    height: 8vh;
+}
+.grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: ". . rights social social . .";
+}
+.content{
+    display: flex;
+    gap: 1vh;
+    margin: 10px;
+}
+.content h1{
+    font-weight: 700;
+}
+.rights{
+    grid-area: rights;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.social{
+    grid-area: social;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
