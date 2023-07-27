@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    height: 8vh;
+    height: 6rem;
 
     position: fixed;
     z-index: 10;
@@ -16,10 +16,7 @@
 }
 .content{
     display: flex;
-    gap: 4vh;
-}
-.content h1{
-    font-weight: 700;
+    gap: 4rem;
 }
 .logo{
     grid-area: logo;

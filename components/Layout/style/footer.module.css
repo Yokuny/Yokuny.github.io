@@ -1,5 +1,5 @@
 .footer{
-    height: 8vh;
+    height: 6rem;
 }
 .grid{
     height: 100%;
@@ -9,12 +9,10 @@
 }
 .content{
     display: flex;
-    gap: 1vh;
-    margin: 10px;
+    gap: var(--gap);
+    margin: .5rem;
 }
-.content h1{
-    font-weight: 700;
-}
+
 .rights{
     grid-area: rights;
     display: flex;
