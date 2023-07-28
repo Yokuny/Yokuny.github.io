@@ -11,12 +11,20 @@ const Header = (): JSX.Element => {
           </div>
         </div>
         <div className={headers.navLinks}>
-          <div className={headers.content}>
-            <Link href={"./"}>Começo</Link>
-            <Link href={"./"}>Sobre</Link>
-            <Link href={"./"}>Projetos</Link>
-            <Link href={"./"}>Contato</Link>
-          </div>
+          <ul className={headers.content}>
+            <li>
+              <Link href={"./"}>Início</Link>
+            </li>
+            <li>
+              <Link href={"./"}>Projetos</Link>
+            </li>
+            <li>
+              <Link href={"./"}>Sobre</Link>
+            </li>
+            <li>
+              <Link href={"./"}>Contato</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

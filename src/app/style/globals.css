@@ -3,28 +3,34 @@
   --gap: 1rem;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 249, 249, 249;
+
+  --label-color: #89f5b7;
+  --detail-color: #e8e8e8;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #BB0000 0deg,
+    #E8DAB2 55deg,
+    #f9f9f9 120deg,
+    #842d1a 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, .6),
     rgba(255, 255, 255, 0)
   );
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --label-color: rgb(1, 65, 255);
+    --detail-color: #171717;
+
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -32,24 +38,28 @@
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0.3)
-    );  
+    );
   }
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 html{
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
-  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -ms-overflow-style:scrollbar;
+  font-size:62.5%;
+  -webkit-text-size-adjust:100%;
 }
 body{
-  font-family: Visuelt Pro,Helvetica,Arial,sans-serif;
-  line-height: 1.5;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent,
+    rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 html,
 body {
@@ -57,17 +67,17 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1, h2{
+  letter-spacing: -1px;
 }
-
-a {
+h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
+}
+p{
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+a, p {
   color: inherit;
   text-decoration: none;
 }
