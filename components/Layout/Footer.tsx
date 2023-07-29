@@ -1,4 +1,4 @@
-import footers from "./style/footer.module.css";
+import footers from "./footer.module.css";
 import Link from "next/link";
 
 const Footer = (): JSX.Element => {

@@ -1,0 +1,20 @@
+.block{
+  display: flex;
+  flex-direction: column;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 10% 15%;
+  background-color: rgb(var(--background-start-rgb));
+}
+.intro p{
+  filter: opacity(0.7);
+}
+.info{
+  grid-area: info;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

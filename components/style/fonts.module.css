@@ -1,6 +1,9 @@
 .title {
   font-size: 5.5rem;
 }
+.subtitle {
+  font-size: 4.5rem;
+}
 .description {
   font-size: 1.8rem;
   line-height: 4rem;

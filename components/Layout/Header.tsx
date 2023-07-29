@@ -1,4 +1,4 @@
-import headers from "./style/header.module.css";
+import headers from "./header.module.css";
 import Link from "next/link";
 
 const Header = (): JSX.Element => {
