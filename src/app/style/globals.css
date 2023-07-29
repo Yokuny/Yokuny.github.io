@@ -4,17 +4,17 @@
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 249, 249, 249;
+  --background-end-rgb: 245, 245, 245;
 
   --label-color: #89f5b7;
   --detail-color: #e8e8e8;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #BB0000 0deg,
-    #E8DAB2 55deg,
-    #f9f9f9 120deg,
-    #842d1a 160deg,
+    #13D6D620 0deg,
+    #16F7B840 55deg,
+    #21b7ed40 120deg,
+    #136ed620 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
@@ -22,29 +22,30 @@
     rgba(255, 255, 255, 0)
   );
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --label-color: rgb(1, 65, 255);
+    --label-color: #0141ff;
     --detail-color: #171717;
 
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --primary-glow: radial-gradient(rgba(1, 65, 255, .4), rgba(1, 65, 255, .1));
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
+      rgba(54, 185, 192, 0.2),
+      rgba(1, 18, 255, 0.1),
+      rgba(220, 53, 195, 0.5)
     );
   }
-}
+} */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: 1px dotted gray; */
 }
 html{
   -webkit-font-smoothing:antialiased;

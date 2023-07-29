@@ -1,8 +1,10 @@
 import home from "./style/page.module.css";
 import font from "@/Layout/style/fonts.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import ceasar from "@/ceasar.png";
 
 import { Source_Sans_3 } from "next/font/google";
-import Link from "next/link";
 const souceSans = Source_Sans_3({ weight: "700", subsets: ["latin"] });
 
 export default function Home() {
@@ -38,7 +40,9 @@ export default function Home() {
         </div>
         <div className={home.art}>
           <div className={home.content}>
-            <h1>Felipe R R</h1>
+            <h3 className={home.bolinha}></h3>
+            <h5 className={home.xis}></h5>
+            <Image src={ceasar} width={0} height={400} alt="" />
           </div>
         </div>
       </div>

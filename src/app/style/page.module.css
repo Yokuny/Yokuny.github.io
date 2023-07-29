@@ -20,6 +20,10 @@
   align-items: center;
   justify-content: flex-start;
 }
+.info .content{
+  position: relative;
+  z-index: 20;
+}
 .info .description{
   width: 100%;
 }
@@ -119,7 +123,6 @@
   opacity: 1;
   width:50px;
 }
-
 .info .social li a{
   position: relative;
   z-index: 2;
@@ -137,7 +140,6 @@
   text-decoration: none;
   filter: opacity(1);
 }
-
 /*  */
 .art {
   grid-area: art;
@@ -147,6 +149,7 @@
   text-align: end;
   
   position: relative;
+  z-index: 10;
   padding: 4rem 0;
 }
 .art::before {
@@ -170,6 +173,50 @@
   filter: blur(45px);
   transform: translateZ(0);
 }
+.art img{
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: 150px;
+  left: -25px;
+  z-index: 25;
+  animation: float 3s ease infinite;
+}
+@keyframes float {
+  0% {
+   transform:translateY(-10px)
+  }
+  50% {
+   transform:translateY(20px)
+  }
+  to {
+   transform:translateY(-10px)
+  }
+ }
+.art .bolinha::before{
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: -19rem;
+  top: 8rem;
+  height: 50rem;
+  width: 50rem;
+  border-radius: 50%;
+  background-color: rgb(var(--background-end-rgb));
+  box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.01);
+}
+.art .xis::before{
+  content: "X";
+  position: absolute;
+  left: 10rem;
+  top: 6rem;
+  z-index: 1;
+  font-size: 50rem;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 /* responsive */
 /* Enable hover only on non-touch devices */

@@ -3,7 +3,7 @@
     height: 8rem;
 
     position: fixed;
-    z-index: 10;
+    z-index: 1000;
     
     backdrop-filter: saturate(180%) blur(5px);
     background: rgba(var(--background-start-rgb), 0.5);
