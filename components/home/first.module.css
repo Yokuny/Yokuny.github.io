@@ -1,4 +1,6 @@
 .grid{
+    padding: 6rem;
+    gap: 2rem;
     display: grid;
     height: calc(100vh - 8vh);
     grid-template-columns: repeat(7, 1fr);
@@ -22,7 +24,6 @@
   }
   .info .description{
     width: 100%;
-    filter: opacity(0.7);
   }
   .info .btnWorks{
     position: relative;
@@ -32,12 +33,6 @@
     align-items: center;
     padding: 5px;
     font-weight: 700;
-    
-    -webkit-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -moz-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -o-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -ms-transition:all .5s cubic-bezier(.77,0,.175,1);
-    transition:all .5s cubic-bezier(.77,0,.175,1)
   }
   .info .btnWorks  a:hover{
     transform:translateX(15px);
@@ -52,16 +47,10 @@
     left: -20px;
     margin: auto;
     background: var(--detail-color);
-  
-    -webkit-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -moz-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -o-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -ms-transition:all .5s cubic-bezier(.77,0,.175,1);
-    transition:all .5s cubic-bezier(.77,0,.175,1)
   }
   .info .btnWorks a:hover:before{
-   width:124%;
-   border-radius:30px
+   width: 124%;
+   border-radius: 30px
   }
   .info .btnWorks .myWorks{
     letter-spacing: .5px;
@@ -103,41 +92,23 @@
     font-weight: 500;
   }
   .info li::before{
-    content: "";
-    width: 15px;
-    height: 20px;
-    position: absolute;
-    background: var(--label-color);
-    opacity: 0;
-  
-    -webkit-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -moz-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -o-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -ms-transition:all .5s cubic-bezier(.77,0,.175,1);
-    transition:all .5s cubic-bezier(.77,0,.175,1)
+    height: 60%;
+    top: 6px;
+    left: -4px;
   }
   .info li:hover:before{
-    opacity: 1;
-    width:50px;
+    width: 90%;
   }
   .info .social li a{
-    position: relative;
-    z-index: 2;
     text-decoration: underline;
-    filter: opacity(0.7);
+    opacity: 0.7;
     text-underline-offset: 5px;
-  
-    -webkit-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -moz-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -o-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -ms-transition:all .5s cubic-bezier(.77,0,.175,1);
-    transition:all .5s cubic-bezier(.77,0,.175,1)
   }
   .info .social li a:hover{
     text-decoration: none;
-    filter: opacity(1);
+    opacity: 1;
   }
-  /*  */
+  /*  */  
   .art {
     grid-area: art;
     display: flex;

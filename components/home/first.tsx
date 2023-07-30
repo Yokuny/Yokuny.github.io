@@ -12,7 +12,7 @@ const First = () => {
   return (
     <div className={first.grid}>
       <div className={first.info}>
-        <div className={first.content}>
+        <div className={`${first.content} ${font.description}`}>
           <h1 className={`${font.title} ${souceSans.className}`}>desenvolvedor full stack web</h1>
           <p className={first.description}>
             Hi I&apos;m Felipe Rangel, a passionate Software Developer & UI/UX Designer based in the Brasil.

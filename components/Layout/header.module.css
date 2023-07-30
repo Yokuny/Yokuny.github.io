@@ -31,45 +31,20 @@
     align-items: center;
     justify-content: flex-end;
 }
-.navLinks li a{
-    position: relative;
-    z-index: 2;
-}
-.navLinks li{
-    position: relative;
-    padding: 1px;
-    transform: translate(0px);
-    opacity: 0.9;
-
-    -webkit-transition: all .5s cubic-bezier(.77,0,.175,1);
-    -moz-transition: all .5s cubic-bezier(.77,0,.175,1);
-    -o-transition: all .5s cubic-bezier(.77,0,.175,1);
-    -ms-transition: all .5s cubic-bezier(.77,0,.175,1);
-    transition: all .5s cubic-bezier(.77,0,.175,1);
-}
-.navLinks li:hover{
-    padding: .6px;
-    font-weight: 500;
-    transform: translate(.5rem);
-    opacity: 1;
-}
 .navLinks li::before{
-    content: "";
-    width: 0px;
     height: 2px;
-    position: absolute;
-    bottom: -1px;
-    background: var(--label-color);
-    opacity: 0;
-
-    -webkit-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -moz-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -o-transition:all .5s cubic-bezier(.77,0,.175,1);
-    -ms-transition:all .5s cubic-bezier(.77,0,.175,1);
-    transition:all .5s cubic-bezier(.77,0,.175,1)
 }
-
-.navLinks li:hover:before{
-    opacity: 1;
+.navLinks li:hover:before{  
     width:100%;
+} 
+.navLinks li a{
+    padding: 1px;
+    transform: translateX(0px);
 }
+.navLinks li a:hover{
+    padding: .6px;
+    letter-spacing: normal;
+    font-weight: 500;
+    transform: translateX(10px);
+}
+

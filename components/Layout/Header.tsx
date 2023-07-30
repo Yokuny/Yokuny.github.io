@@ -19,7 +19,7 @@ const Header = (): JSX.Element => {
               <Link href={"./"}>Projetos</Link>
             </li>
             <li>
-              <Link href={"./"}>Sobre</Link>
+              <Link href={"./about"}>Sobre</Link>
             </li>
             <li>
               <Link href={"./"}>Contato</Link>
