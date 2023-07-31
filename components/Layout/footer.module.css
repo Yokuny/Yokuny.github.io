@@ -1,26 +1,39 @@
 .footer{
     height: 6rem;
+    height: 20rem;
+    background-color: rgb(var(--foreground-rgb));
+    color: rgb(var(--background-end-rgb));
 }
-.grid{
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: ". . rights social social . .";
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.float{
+    display: flex;
 }
 .content{
     display: flex;
+    align-items: center;
     gap: var(--gap);
     margin: .5rem;
 }
-
+.content a{
+    color: rgb(var(--background-end-rgb));
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.content a svg{
+    width: 15px;
+    height: 15px;
+}
 .rights{
-    grid-area: rights;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .social{
-    grid-area: social;
     display: flex;
     align-items: center;
     justify-content: flex-start;

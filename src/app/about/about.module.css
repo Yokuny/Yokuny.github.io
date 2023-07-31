@@ -1,6 +1,7 @@
 .grid{
   display: grid;
   grid-template-columns: repeat(9, 1fr);
+  color: rgb(var(--foreground-rgb));
 }
 /*  */
 .infoDetail{
@@ -17,7 +18,7 @@
 .first{
   height: calc(100vh - 8vh);
   padding: 6rem;
-  background-color: #fff;
+  
   grid-template-areas: ". avatar avatar . title title title title .";
 }
 .title{
@@ -38,7 +39,7 @@
 .typh{
   padding: 6rem;
   grid-template-areas: ". detail . . body body body body .";
-  background-color: #fff;
+  background-color: rgb(var(--background-start-rgb));
 }
 /*  */
 .columns{
