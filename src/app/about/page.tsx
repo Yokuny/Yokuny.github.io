@@ -22,7 +22,8 @@ const About = () => {
           <Image src={avatar} height={350} alt="" />
         </div>
       </div>
-      <div className={`${about.grid} ${about.second}`}>
+      {/*  */}
+      <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
           /01<span> STORY</span>
         </p>
@@ -46,7 +47,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className={`${about.grid} ${about.second}`}>
+
+      <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
           /02<span> THE PROCESS</span>
         </p>
@@ -67,7 +69,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className={`${about.grid} ${about.second}`}>
+      {/*  */}
+      <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
           /03<span> FERRAMENTAS</span>
         </p>
@@ -117,7 +120,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={`${about.grid} ${about.second}`}>
+      {/*  */}
+      <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
           /04<span> CONTATO</span>
         </p>
@@ -134,13 +138,26 @@ const About = () => {
               </li>
               /
               <li>
-                <Link href={"/"}>Download CV</Link>
+                <Link href={"/"}>WhatsApp</Link>
               </li>
             </ul>
           </div>
           <div className={about.infoContent}>
             <h2>Email.</h2>
-            <p className={about.info}>juliusguevarra101@gmail.com</p>
+            <ul className={about.social}>
+              <li>
+                <Link href={"./"}>Felipe.vni@hotmail.com</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className={about.typh}>
+        <div className={about.reference}>
+          <div>
+            <h1>“Escolha um trabalho que você ame e não terá que trabalhar um único dia em sua vida.”</h1>
+            <p>— Confucius</p>
           </div>
         </div>
       </div>
