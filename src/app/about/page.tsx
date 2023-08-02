@@ -1,21 +1,22 @@
 import about from "./about.module.css";
 import font from "@/style/fonts.module.css";
 import avatar from "@/yea.webp";
-import Link from "next/link";
 
-// import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 
 import { Source_Sans_3 } from "next/font/google";
-const souceSans = Source_Sans_3({ weight: "600", subsets: ["latin"] });
+const souceSans = Source_Sans_3({ weight: "800", subsets: ["latin"] });
 
 const About = () => {
   return (
     <>
       <div className={`${about.grid} ${about.first}`}>
         <div className={about.title}>
-          <h1 className={`${font.subtitle} ${souceSans.className}`}>
-            Desenvolvedor de inovações, transformando cenários comuns em soluções tecnológicas.
+          <h1 className={`${font.title} ${souceSans.className}`}>
+            Desenvolvedor de inovações, transformando
+            <br />
+            cenários comuns em soluções tecnológicas.
           </h1>
         </div>
         <div className={about.avatar}>
@@ -47,7 +48,7 @@ const About = () => {
           </p>
         </div>
       </div>
-
+      {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
           /02<span> THE PROCESS</span>
@@ -130,15 +131,15 @@ const About = () => {
             <h2>Social.</h2>
             <ul className={about.social}>
               <li>
-                <Link href={"./"}>Linkedin</Link>
+                <Link href={"https://linkedin.com/in/yokuny/"}>Linkedin</Link>
               </li>
               /
               <li>
-                <Link href={"./"}>GitHub</Link>
+                <Link href={"https://github.com/Yokuny"}>GitHub</Link>
               </li>
               /
               <li>
-                <Link href={"/"}>WhatsApp</Link>
+                <Link href={"https://wa.me/5528999848929"}>WhatsApp</Link>
               </li>
             </ul>
           </div>
@@ -146,7 +147,7 @@ const About = () => {
             <h2>Email.</h2>
             <ul className={about.social}>
               <li>
-                <Link href={"./"}>Felipe.vni@hotmail.com</Link>
+                <Link href={"mailto:Felipe.vni@hotmail.com"}>Felipe.vni@hotmail.com</Link>
               </li>
             </ul>
           </div>

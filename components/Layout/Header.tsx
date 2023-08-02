@@ -22,7 +22,7 @@ const Header = (): JSX.Element => {
               <Link href={"./about"}>Sobre</Link>
             </li>
             <li>
-              <Link href={"./"}>Contato</Link>
+              <Link href={"./contact"}>Contato</Link>
             </li>
           </ul>
         </div>

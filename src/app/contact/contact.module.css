@@ -1,0 +1,51 @@
+.grid{
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: ". form form form form . .";
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb));
+  padding: 6rem;
+}
+.container{
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 900px;
+  gap: 6rem;
+}
+.container h1{
+  font-size: 6.5rem;
+  margin-bottom: 4rem;
+}
+.container p{
+  margin-bottom: 4rem;
+  /* criar algo para o texto quebrar */
+}
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4rem;
+}
+.form input:focus, .form textarea:focus, .form input:hover, .form textarea:hover{
+  filter: invert() opacity(1);
+  background-color: rgb(var(--background-end-rgb));
+  cursor: pointer;
+}
+.form button{
+  background-color: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-end-rgb));
+  cursor: pointer;
+  max-width: 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+.form button:hover{
+  filter: invert();
+}

@@ -1,10 +1,10 @@
-import First from "@/home/first";
-import Works from "@/home/works";
+import Intro from "@/home/Intro";
+import Works from "@/home/Works";
 
 export default function Home() {
   return (
     <main>
-      <First />
+      <Intro />
       <Works />
     </main>
   );

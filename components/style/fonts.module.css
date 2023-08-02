@@ -1,13 +1,7 @@
 .title {
-  font-size: 5.5rem;
+  font-size: 3.5rem;
 }
-.subtitle {
-  font-size: 4.5rem;
-}
-.description {
-  font-size: 1.6rem;
-}
-.description p{
+.title p, .title input, .title textarea{
   font-size: 1.8rem;
   filter: opacity(0.7);
 }
@@ -16,6 +10,6 @@
   font-weight: 600;
 }
 .infoDetail span{
-  filter: opacity(0.7);
+  filter: opacity(0.8);
   font-weight: normal;
 }

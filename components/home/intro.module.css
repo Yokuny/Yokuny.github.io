@@ -1,0 +1,240 @@
+.grid{
+  padding: 6rem;
+  gap: 2rem;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: ". info info . art art .";
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: .5rem;
+}
+.info{
+  grid-area: info;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.info .content{
+  position: relative;
+  z-index: 20;
+}
+.info .btnWorks{
+  position: relative;
+}
+.info .btnWorks a{
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  font-weight: 700;
+}
+.info .btnWorks  a:hover{
+  transform:translateX(15px);
+}
+.info .btnWorks a::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  position: absolute;
+  left: -20px;
+  margin: auto;
+  background: var(--detail-color);
+}
+.info .btnWorks a:hover:before{
+  width: 124%;
+  border-radius: 30px
+}
+.info .btnWorks .myWorks{
+  letter-spacing: .5px;
+  position: relative;
+  z-index: 2;
+}
+.info .btnWorks .worksArrow{
+  width: 30px;
+  height: 1px;
+  position: relative;
+  background: rgb(var(--foreground-rgb));
+  margin-left: var(--gap);
+}
+.info .btnWorks .worksArrow::before{
+  transform: rotate(-35deg);
+}
+.info .btnWorks .worksArrow::after{
+  transform: rotate(35deg);
+}
+.info .btnWorks .worksArrow::before,
+.info .btnWorks .worksArrow::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgb(var(--foreground-rgb));
+  width: 8px;
+  height: 1px;
+  transform-origin: center right;
+}
+.info .social{
+  margin-top: 10rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  list-style: none;
+  gap: var(--gap);
+  font-weight: 500;
+}
+.info li::before{
+  height: 60%;
+  top: 6px;
+  left: -4px;
+}
+.info li:hover:before{
+  width: 90%;
+}
+.info .social li a{
+  text-decoration: underline;
+  opacity: 0.7;
+  text-underline-offset: 5px;
+}
+.info .social li a:hover{
+  text-decoration: none;
+  opacity: 1;
+}
+
+/*  */  
+.art {
+  grid-area: art;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: end;
+  
+  position: relative;
+  z-index: 10;
+  padding: 4rem 0;
+}
+.art::before {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+}
+.art::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+}
+.art::before,
+.art::after {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+.art img{
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: 150px;
+  left: -25px;
+  z-index: 25;
+  animation: float 3s ease infinite;
+}
+@keyframes float {
+  0% {
+    transform:translateY(-10px)
+  }
+  50% {
+    transform:translateY(20px)
+  }
+  to {
+    transform:translateY(-10px)
+  }
+  }
+.art .bolinha::before{
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: -19rem;
+  top: 8rem;
+  height: 50rem;
+  width: 50rem;
+  border-radius: 50%;
+  background-color: rgb(var(--background-end-rgb));
+  box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.01);
+}
+.art .xis::before{
+  content: "X";
+  position: absolute;
+  left: 10rem;
+  top: 6rem;
+  z-index: 1;
+  font-size: 50rem;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* responsive */
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .art {
+    padding: 8rem 0 6rem;
+  }
+
+  .art::before {
+    transform: none;
+    height: 300px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

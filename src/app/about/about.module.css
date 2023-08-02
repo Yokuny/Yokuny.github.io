@@ -38,7 +38,7 @@
 /* part */
 .typh{
   padding: 6rem;
-  grid-template-areas: ". detail . . body body body body .";
+  grid-template-areas: ". detail .  body body body body . .";
   background-color: rgb(var(--background-start-rgb));
 }
 /*  */
@@ -78,7 +78,7 @@
 }
  .social li a{
   text-decoration: underline;
-  opacity: 0.7;
+  opacity: 0.9;
   text-underline-offset: 5px;
 }
  .social li a:hover{

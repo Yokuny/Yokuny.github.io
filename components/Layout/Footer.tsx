@@ -16,13 +16,12 @@ const Footer = (): JSX.Element => {
         </div>
         <div className={footers.social}>
           <div className={footers.content}>
-            <Link href={"./"}>
+            <Link href={"https://github.com/Yokuny"}>
               <BsGithub />
             </Link>
-            <Link href={"./"}>
+            <Link href={"https://linkedin.com/in/yokuny/"}>
               <BsLinkedin />
             </Link>
-            <Link href={"./"}></Link>
           </div>
         </div>
       </div>
