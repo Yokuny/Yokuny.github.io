@@ -14,7 +14,7 @@ const HeaderLinks = () => {
         </li>
       )}
       <li>
-        <Link href={"/projetos"}>Projetos</Link>
+        <Link href={"/"}>Projetos</Link>
       </li>
       <li>
         <Link href={"/about"}>Sobre</Link>
