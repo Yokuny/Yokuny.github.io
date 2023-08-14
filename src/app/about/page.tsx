@@ -50,7 +50,9 @@ const About = () => {
         </div>
       </div>
       {/*  */}
-      <div className={about.image}></div>
+      <div className={about.imageBanner}>
+        <div className={about.image}></div>
+      </div>
       {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>

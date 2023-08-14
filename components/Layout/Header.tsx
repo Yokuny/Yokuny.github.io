@@ -7,7 +7,7 @@ const Header = (): JSX.Element => {
       <div className={headers.grid}>
         <div className={headers.logo}>
           <div className={headers.content}>
-            <>empty</>
+            <></>
           </div>
         </div>
         <div className={headers.navLinks}>
