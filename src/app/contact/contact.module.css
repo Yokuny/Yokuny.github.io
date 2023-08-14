@@ -21,7 +21,7 @@
 }
 .container p{
   margin-bottom: 4rem;
-  /* criar algo para o texto quebrar */
+  max-width: 600px;
 }
 .form{
   width: 100%;
@@ -40,12 +40,18 @@
   color: rgb(var(--background-end-rgb));
   cursor: pointer;
   max-width: 25%;
+  border: 1px solid rgb(var(--background-end-rgb));
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--gap);
+  position: relative;
 }
-.form button:hover{
+.form button:hover, .form button:focus{
   filter: invert();
+  gap: 3rem;
+}
+.form button svg{
+  transform: rotate(45deg);
 }

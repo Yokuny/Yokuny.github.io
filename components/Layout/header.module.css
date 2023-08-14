@@ -1,7 +1,6 @@
 .header{
     width: 100%;
     height: 8rem;
-
     position: fixed;
     z-index: 1000;
     
@@ -14,7 +13,7 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-areas: ". logo . . link link .";
 }
-.content{
+.content, .navLinks ul{
     display: flex;
     gap: 4rem;
     list-style: none;
@@ -31,20 +30,21 @@
     align-items: center;
     justify-content: flex-end;
 }
+/*  */
+.navLinks li{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+}
 .navLinks li::before{
     height: 2px;
 }
 .navLinks li:hover:before{  
     width:100%;
-} 
-.navLinks li a{
-    padding: 1px;
-    transform: translateX(0px);
 }
-.navLinks li a:hover{
-    padding: .6px;
+.navLinks li:hover a{
     letter-spacing: normal;
-    font-weight: 500;
-    transform: translateX(10px);
+    font-weight: 600;
 }
 

@@ -41,6 +41,16 @@
   grid-template-areas: ". detail .  body body body body . .";
   background-color: rgb(var(--background-start-rgb));
 }
+/* image */
+.image  {
+  height: 35vh;
+  width: 100%;
+  background-image: url("/mac.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*  */
 .columns{
   display: grid;

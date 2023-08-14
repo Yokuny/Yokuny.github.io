@@ -1,7 +1,8 @@
 :root {
-  --border-radius: 12px;
+  --border-radius: 6px;
   --gap: 1rem;
-
+}
+.light-theme {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 245, 245, 245;
@@ -22,31 +23,29 @@
     rgba(255, 255, 255, 0)
   );
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.dark-theme {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 
-    --label-color: #0141ff;
-    --detail-color: #171717;
+  --label-color: #0141ff;
+  --detail-color: #171717;
 
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, .4), rgba(1, 65, 255, .1));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(54, 185, 192, 0.2),
-      rgba(1, 18, 255, 0.1),
-      rgba(220, 53, 195, 0.5)
-    );
-  }
+  --primary-glow: radial-gradient(rgba(1, 65, 255, .4), rgba(1, 65, 255, .1));
+  --secondary-glow: linear-gradient(
+    to bottom right,
+    rgba(54, 185, 192, 0.2),
+    rgba(1, 18, 255, 0.1),
+    rgba(220, 53, 195, 0.5)
+  );
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
-  /* border: 1px dotted gray; */
+  /* border: 1px dotted rgba(128, 128, 128, 0.1); */
 }
 html{
   -webkit-font-smoothing:antialiased;
@@ -55,7 +54,7 @@ html{
   font-size:62.5%;
   -webkit-text-size-adjust:100%;
 }
-body{
+main{
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent,
     rgb(var(--background-end-rgb)))
@@ -89,7 +88,7 @@ a, p {
   text-decoration: none;
 }
 /* transitions */
-li, li::before, a, a::before, li a, li a::before, input, input::before, textarea, textarea::before, button{
+li, li::before, a, a::before, li a, li a::before, input, input::before, textarea, textarea::before, button, .form button{
   -webkit-transition: all .5s cubic-bezier(.77,0,.175,1);
   -moz-transition: all .5s cubic-bezier(.77,0,.175,1);
   -o-transition: all .5s cubic-bezier(.77,0,.175,1);
@@ -122,13 +121,13 @@ input, label, select, button, textarea {
   width: 100%;
   position: relative;
 
-  border: none !important;
-  border-radius: 0 !important;
+  border: none;
+  border-radius: 0;
   padding-left: var(--gap);
-  border-bottom: 2px solid rgb(var(--foreground-rgb)) !important;
+  border-bottom: 2px solid rgb(var(--foreground-rgb));
   
 	line-height: 4rem;
-  white-space: pre-wrap !important;
+  white-space: pre-wrap;
   color: rgb(var(--foreground-rgb));
   background: transparent;
 }

@@ -101,7 +101,7 @@
   opacity: 0.7;
   text-underline-offset: 5px;
 }
-.info .social li a:hover{
+.info .social li:hover a{
   text-decoration: none;
   opacity: 1;
 }

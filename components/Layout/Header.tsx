@@ -1,5 +1,5 @@
 import headers from "./header.module.css";
-import Link from "next/link";
+import HeaderLinks from "./HeaderLinks";
 
 const Header = (): JSX.Element => {
   return (
@@ -7,24 +7,11 @@ const Header = (): JSX.Element => {
       <div className={headers.grid}>
         <div className={headers.logo}>
           <div className={headers.content}>
-            <h1>7\</h1>
+            <>empty</>
           </div>
         </div>
         <div className={headers.navLinks}>
-          <ul className={headers.content}>
-            <li>
-              <Link href={"./"}>Início</Link>
-            </li>
-            <li>
-              <Link href={"./"}>Projetos</Link>
-            </li>
-            <li>
-              <Link href={"./about"}>Sobre</Link>
-            </li>
-            <li>
-              <Link href={"./contact"}>Contato</Link>
-            </li>
-          </ul>
+          <HeaderLinks />
         </div>
       </div>
     </header>

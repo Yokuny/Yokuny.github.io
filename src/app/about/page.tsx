@@ -1,6 +1,7 @@
 import about from "./about.module.css";
 import font from "@/style/fonts.module.css";
 import avatar from "@/yea.webp";
+import mac from "@/mac.jpg";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -48,6 +49,8 @@ const About = () => {
           </p>
         </div>
       </div>
+      {/*  */}
+      <div className={about.image}></div>
       {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>

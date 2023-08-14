@@ -1,0 +1,15 @@
+.optionsMenu{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+
+    padding: var(--gap);
+    border-radius: var(--border-radius);
+    backdrop-filter: saturate(180%) blur(5px);
+    background: rgba(var(--background-start-rgb), 0.5);
+}
+.optionsMenu ul li{
+    cursor: pointer;
+    font-size: 1.6rem;
+}
