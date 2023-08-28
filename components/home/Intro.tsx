@@ -5,15 +5,15 @@ import ceasar from "@/ceasar.png";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Source_Sans_3 } from "next/font/google";
-const souceSans = Source_Sans_3({ weight: "900", subsets: ["latin"] });
+import { Urbanist } from "next/font/google";
+const urbanist = Urbanist({ weight: "900", subsets: ["latin"] });
 
 const Intro = () => {
   return (
-    <div className={intro.grid} id="beginning">
+    <div className={intro.grid}>
       <div className={intro.info}>
         <div className={`${intro.content} ${font.title}`}>
-          <h1 className={souceSans.className}>desenvolvedor full stack</h1>
+          <h1 className={urbanist.className}>desenvolvedor full stack</h1>
           <p>
             Hi I&apos;m Felipe Rangel, a passionate Software Developer & UI/UX Designer based in the Brasil.
           </p>

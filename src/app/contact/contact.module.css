@@ -39,7 +39,8 @@
   background-color: rgb(var(--foreground-rgb));
   color: rgb(var(--background-end-rgb));
   cursor: pointer;
-  max-width: 25%;
+  max-width: max(25% , 200px);
+  height: 6rem;
   border: 2px solid rgb(var(--background-end-rgb));
 
   display: flex;
@@ -54,4 +55,24 @@
 }
 .form button svg{
   transform: rotate(45deg);
+}
+
+@media screen and (max-width: 750px) {
+  .grid{
+    grid-template-areas: "form form form form form form form";
+    padding: 3rem;
+    padding-top: 10vh;
+  }
+  .container h1{
+    margin-bottom: 1rem;
+  }
+  .container p{
+    margin-bottom: 1rem;
+  }
+  .form{
+    gap: 3rem;
+  }
+  .form button{
+    max-width: 60%;
+  }
 }

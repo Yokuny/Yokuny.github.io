@@ -13,3 +13,14 @@
     cursor: pointer;
     font-size: 1.6rem;
 }
+@media screen and (max-width: 768px) {
+    .optionsMenu{
+        right: 1rem;
+        bottom: 3.3rem;
+        padding: .5rem;
+    }
+    .optionsMenu ul li{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+}

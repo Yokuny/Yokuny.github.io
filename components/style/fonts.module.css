@@ -3,13 +3,12 @@
 }
 .title p, .title input, .title textarea{
   font-size: 1.8rem;
-  filter: opacity(0.7);
 }
 .infoDetail{
   font-size: 1.2rem;
   font-weight: 600;
 }
 .infoDetail span{
-  filter: opacity(0.8);
+  opacity: .8;
   font-weight: normal;
 }

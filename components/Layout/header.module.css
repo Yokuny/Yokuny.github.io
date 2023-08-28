@@ -35,16 +35,35 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   font-weight: 500;
 }
 .navLinks li::before{
     height: 2px;
+    width: 300%;
+    top: unset;
+    left: unset;
+    bottom: 4px !important;
 }
 .navLinks li:hover:before{  
     width:100%;
 }
-.navLinks li:hover a{
-    letter-spacing: normal;
-    font-weight: 600;
+.navLinks li a{
+    letter-spacing: .05rem;
+    text-decoration: none;
 }
 
+@media screen and (max-width: 900px) {
+    .header{
+        height: 6rem;
+        border-bottom: 1px solid rgba(var(--foreground-rgb), 0.1);
+    }
+    .grid{
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: ". logo . . link link link link .";
+    }
+    .content, .navLinks ul{
+        gap: 3rem;
+    }
+    .navLinks li{
+       font-weight: 600;
+    }
+}
