@@ -1,33 +1,39 @@
 import about from "./about.module.css";
 import font from "@/style/fonts.module.css";
 import avatar from "@/yea.webp";
-import mac from "@/mac.jpg";
 
 import Link from "next/link";
 import Image from "next/image";
 
-import { Source_Sans_3 } from "next/font/google";
-const souceSans = Source_Sans_3({ weight: "800", subsets: ["latin"] });
+import { Urbanist } from "next/font/google";
+const urbanist = Urbanist({ weight: ["200", "900"], subsets: ["latin"] });
 
+import { Qwigley } from "next/font/google";
+const qwigley = Qwigley({ weight: ["400"], subsets: ["latin"] });
+import { Poppins } from "next/font/google";
+const poppins = Poppins({ weight: ["500"], subsets: ["latin"] });
+// como aplicar diferentes fonts por diferentes tamanhos de tela?
 const About = () => {
   return (
     <>
-      <div className={`${about.grid} ${about.first}`}>
+      <div className={`${about.grid} ${about.mobileGrid} ${about.first}`}>
         <div className={about.title}>
-          <h1 className={`${font.title} ${souceSans.className}`}>
-            Desenvolvedor de inovações, transformando
-            <br />
-            cenários comuns em soluções tecnológicas.
+          <h1 className={`${font.title} ${urbanist.className}`}>
+            Desenvolvedor de inovações, transformando cenários comuns em soluções tecnológicas.
           </h1>
         </div>
         <div className={about.avatar}>
-          <Image src={avatar} height={350} alt="" />
+          <Image src={avatar} height={350} alt="emoji" />
         </div>
       </div>
       {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
-          /01<span> STORY</span>
+          /01
+          <span className={`${poppins.className} ${`${poppins.className} ${qwigley.className}`}`}>
+            {" "}
+            HISTORY
+          </span>
         </p>
         <div className={`${about.infoContent} ${font.description}`}>
           <h2>Uma história sobre trabalho e perseverança.</h2>
@@ -56,7 +62,7 @@ const About = () => {
       {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
-          /02<span> THE PROCESS</span>
+          /02<span className={`${poppins.className} ${qwigley.className}`}> THE PROCESS</span>
         </p>
         <div className={`${about.infoContent} ${font.description}`}>
           <h2>How i work.</h2>
@@ -78,7 +84,7 @@ const About = () => {
       {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
-          /03<span> FERRAMENTAS</span>
+          /03<span className={`${poppins.className} ${qwigley.className}`}> TOOLS</span>
         </p>
         <div className={`${about.infoContent} ${font.description}`}>
           <div className={about.infoContent}>
@@ -97,7 +103,7 @@ const About = () => {
               <h2>Creative Design</h2>
               <ul className={about.info}>
                 <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
+                <li>Figma</li>
                 <li>Adobe InDesign</li>
                 <li>Adobe XD</li>
                 <li>Adobe After Effects</li>
@@ -111,13 +117,13 @@ const About = () => {
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React JS</li>
-                <li>Node JS</li>
-                <li>Express JS</li>
                 <li>Next JS</li>
-                <li>Redux</li>
-                <li>Firebase</li>
-                <li>GraphQL</li>
+                <li>Node JS</li>
+                <li>Nest JS</li>
+                <li>SQL</li>
                 <li>MongoDB</li>
+                <li>Prisma</li>
+                <li>Redis</li>
                 <li>MySQL</li>
                 <li>Webpack</li>
                 <li>Git</li>
@@ -129,7 +135,7 @@ const About = () => {
       {/*  */}
       <div className={`${about.grid} ${about.typh}`}>
         <p className={`${font.infoDetail} ${about.infoDetail}`}>
-          /04<span> CONTATO</span>
+          /04<span className={`${poppins.className} ${qwigley.className}`}> CONTACT</span>
         </p>
         <div className={`${about.infoContent} ${font.description}`}>
           <div className={about.infoContent}>

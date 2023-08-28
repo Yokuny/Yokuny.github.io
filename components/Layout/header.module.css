@@ -54,7 +54,6 @@
 @media screen and (max-width: 900px) {
     .header{
         height: 6rem;
-        border-bottom: 1px solid rgba(var(--foreground-rgb), 0.1);
     }
     .grid{
         grid-template-columns: repeat(9, 1fr);

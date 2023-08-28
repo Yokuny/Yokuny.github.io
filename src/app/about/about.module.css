@@ -19,7 +19,7 @@
   height: calc(100vh - 8vh);
   padding: 6rem;
   
-  grid-template-areas: ". avatar avatar . title title title title .";
+  grid-template-areas: ". avatar avatar title title title title title .";
 }
 .title{
   grid-area: title;
@@ -27,6 +27,10 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+  width: 100%;
+}
+.title h1{
+  max-width: min(90%, 750px);
 }
 .avatar {
   grid-area: avatar;
@@ -110,116 +114,87 @@
   text-align: end;
 }
 
-@media (max-width: 1100px) {
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    color: rgb(var(--foreground-rgb));
-  }
-  /*  */
-  .infoDetail{
-    grid-area: detail;
-  }
-  .infoContent{
-    grid-area: body;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    text-align: justify;
-  }
-  /* first screen */
+@media (max-width: 1200px) {
   .first{
-    height: calc(100vh - 8vh);
-    padding: 6rem;
-    
-    grid-template-areas: ". avatar avatar . title title title title .";
-  }
-  .title{
-    grid-area: title;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
+    padding: 2rem;
+    grid-template-areas: ". avatar avatar title title title title title title";
   }
   .avatar {
-    grid-area: avatar;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
   }
-  /* part */
   .typh{
     padding: 6rem;
-    grid-template-areas: ". detail .  body body body body . .";
-    background-color: rgb(var(--background-start-rgb));
+    grid-template-areas: ". detail .  body body body body body .";
   }
-  /* image */
-  .imageBanner{
-    height: 35vh;
-    position: relative;
+}
+@media (max-width: 1000px) {
+  .mobileGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr .3fr
   }
-  .image{
-    height: 100%;
+  .first{
+    grid-template-areas: "avatar" "title";
+  }
+  .title{
     width: 100%;
-    position: relative;
-    background-image: url("/mac.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(var(--background-start-rgb), 0.4);
-    pointer-events: none;
-  }
-  /*  */
-  .columns{
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas: "first first. . body body body body body";
-  }
-  .column1{
-    grid-area: first;
-  }
-  .column2{
-    grid-area: body;
-  }
-  .column2 ul{
-    width: 100%;
-  }
-  .column2 ul li{
-    width: 33%;
-    float: left;
-    box-sizing: border-box;
-  }
-  /*  */
-  .social{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-  }
-  /*  */
-  .reference{
-    display: flex;
     justify-content: center;
-    padding: 6rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
   }
-  .reference div{
+  .title h1{
+    font-size: 2.6rem;
+    font-weight: 200;
+    text-align: center;
+    max-width: min(90%, 550px);
+    backdrop-filter: saturate(50%) blur(5px);
+    background: rgba(var(--background-start-rgb), 0.6);
+  }
+  .avatar img{
+    position: absolute;
+    z-index: -1;
+    position: fixed;
+  }
+
+  .typh{
+    grid-template-areas:
+    "detail . body body body body body body body"
+    "detail . body body body body body body body";
+  }
+}
+@media (max-width: 650px) {
+  .typh{
+    padding: 4rem 2rem 4rem 1rem;
+    grid-template-areas: "detail body body body body body body body body";
+  }
+  .first{
+    height: calc(100vh - 3rem);
+  }
+  .infoContent{
+    margin-left: 2px;
+    gap: 3rem;
+  }
+  .infoContent h2{
+    text-align: start;
+  }
+  .infoDetail{
+    margin-left: 8px;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    opacity: 0.8;
   }
-  .reference p{
-    text-align: end;
+  .infoDetail span{
+    margin-top: 4.2rem;
+    display: flex;
+    align-items: end;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
   }
+  .reference{
+    padding: 4rem;
+  }
+  .column2 ul li{
+    width: 50%;
+  }
+  
 }

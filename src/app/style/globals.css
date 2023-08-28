@@ -45,7 +45,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  /* border: 1px dotted rgba(128, 128, 128, 0.1); */
+  /* border: 1px dotted rgba(128, 128, 128, 0.4); */
 }
 html{
   -webkit-font-smoothing:antialiased;
@@ -56,9 +56,7 @@ html{
 }
 main{
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent,
-    rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+  background: var(--background-start-rgb);
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -86,6 +84,17 @@ a, p {
 }
 li{
   font-size: 1.4rem;
+}
+@media (max-width: 650px) {
+  /* text font */
+  p, li{
+    line-height: 2.6rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+  }
+  li{
+    font-size: 1.2rem;
+  }
 }
 li:hover{
   filter: opacity(1);
@@ -120,8 +129,6 @@ li a{
 li:hover a{
   text-decoration: none;
 }
-/*  */
-
 /* transitions */
 li, li::before, a, a::before, li a, li a::before, input, input::before, textarea, textarea::before, button, .form button{
   -webkit-transition: all .5s cubic-bezier(.77,0,.175,1);
@@ -148,8 +155,4 @@ input, label, select, button, textarea {
 input:focus, textarea:focus, select:focus, button:focus{
   outline: none;
 	outline: 0;
-}
-
-@media screen and (max-width: 900px) {
- 
 }

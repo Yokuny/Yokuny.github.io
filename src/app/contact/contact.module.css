@@ -39,7 +39,7 @@
   background-color: rgb(var(--foreground-rgb));
   color: rgb(var(--background-end-rgb));
   cursor: pointer;
-  max-width: max(25% , 200px);
+  max-width: max(25%, 200px);
   height: 6rem;
   border: 2px solid rgb(var(--background-end-rgb));
 
